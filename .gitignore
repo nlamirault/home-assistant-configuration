@@ -1,0 +1,13 @@
+# Home Assistant
+configuration/home-assistant.log
+configuration/home-assistant_v2.db
+configuration/*.db-journal
+configuration/lib
+configuration/deps
+configuration/tts
+configuration/secrets.yaml
+configuration/known_devices.yaml
+
+# Editors
+*~
+
