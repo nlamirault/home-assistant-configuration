@@ -1,0 +1,6 @@
+purge_days: 14
+exclude:
+  domains:
+    - automation
+    - weblink
+    - updater
