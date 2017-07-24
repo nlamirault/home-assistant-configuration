@@ -1,0 +1,5 @@
+name: School 1
+latitude: !secret school1_latitude
+longitude: !secret school1_longitude
+radius: 250
+icon: mdi:worker
