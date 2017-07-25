@@ -1,0 +1,8 @@
+- alias: IP Changed
+  trigger:
+    - platform: state
+      entity_id: sensors.my_ip
+  action:
+    - service: notify.telegram
+      data:
+        message: "The external IP address has changed to: '{{ states.sensors.my_ip.state }}'"
