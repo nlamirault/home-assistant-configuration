@@ -1,5 +1,7 @@
 # Home Assistant
 
+[![Circle CI](https://circleci.com/gh/nlamirault/home-assistant-configuration/tree/master.svg?style=svg)](https://circleci.com/gh/nlamirault/home-assistant-configuration/tree/master)
+
 This is my Home Assistant configuration.
 
 Supported devices :
