@@ -1,0 +1,15 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  pre:
+    - sudo apt-get update -qq
+    - sudo apt-get install python3 python-pip
+    - pip3 install homeassistant
+    - cp fake_secrets.yaml secrets.yaml
+
+test:
+  override:
+    - hass -c . --script check_config
+
