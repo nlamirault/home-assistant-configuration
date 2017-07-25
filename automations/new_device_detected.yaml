@@ -1,0 +1,16 @@
+- alias: A new device is connected to wifi
+  trigger:
+    platform: event
+    event_type: device_tracker_new_device
+  action:
+    - service: notify.pushbullet
+      data_template:
+        title: "New device connected"
+        message: >
+          New device: ID {{ trigger.event.data.entity_id }} and hostname {{ trigger.event.data.host_name }}
+    - service: ifttt.trigger
+      data: {"event": "NEW_DEVICE_CONNECTED", "value1": "New entity ID {{ trigger.event.data.entity_id }} and hostname {{ trigger.event.data.host_name }}"}
+    - service: notify.telegram
+      data:
+        message: "New device: ID {{ trigger.event.data.entity_id }} and hostname {{ trigger.event.data.host_name }}"
+

@@ -1,0 +1,10 @@
+- alias: "Speedtest"
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.speedtest_download
+    below: '5'
+  action:
+    service: notify.pushbullet
+    data:
+      message: "My download speed on is currently {{ states('sensor.speedtest_download') }} Mbit/s"
+

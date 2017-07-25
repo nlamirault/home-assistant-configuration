@@ -1,0 +1,13 @@
+- alias: "Start HAAS"
+  trigger:
+    platform: homeassistant
+    event: start
+  action:
+    - service: ifttt.trigger
+      data: {"event": "HASS_START_UP", "value1": "Start up"}
+    - service: ifttt.trigger
+      data: {"event": "HASS_START", "value1": "Start up"}
+    - service: notify.telegram
+      data:
+        message: "Home Assistant started"
+

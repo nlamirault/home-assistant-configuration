@@ -1,0 +1,13 @@
+- alias: Devices states changes
+  trigger:
+    platform: state
+    entity_id: groups.devices
+  action:
+    - service: notify.telegram
+      data_template:
+        message: >
+          entity_id: {{ trigger.entity_id }}
+          to_entity: {{ trigger.to_state.entity_id }}
+          to_object: {{ trigger.to_state.object_id }}
+          to_state: {{ trigger.to_state.state }}
+
