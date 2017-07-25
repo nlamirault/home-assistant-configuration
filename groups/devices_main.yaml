@@ -1,0 +1,12 @@
+name: Main Devices
+view: no
+entities:
+  - device_tracker.liveboxhome
+  - device_tracker.orangetvhome
+  - device_tracker.synohome
+  - device_tracker.imachome
+  - device_tracker.osmchome
+  - device_tracker.osmcchambrehome
+  - device_tracker.jarvismasterhome
+  - device_tracker.jarvisnode1home
+

@@ -1,0 +1,5 @@
+name: Network Devices
+view: no
+icon: mdi:server
+entities:
+  - device_tracker.nmap_tracker

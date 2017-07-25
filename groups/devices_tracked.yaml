@@ -1,0 +1,8 @@
+name: Devices
+view: no
+entities:
+  - device_tracker.androidhome
+  - device_tracker.oablaptophome
+  - device_tracker.iphonedesophiehome
+  - device_tracker.android1home
+  - device_tracker.oablaptophome

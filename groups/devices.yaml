@@ -1,0 +1,6 @@
+name: Devices
+view: yes
+icon: mdi:server
+entities:
+  - group.devices_main
+  - group.devices_tracked

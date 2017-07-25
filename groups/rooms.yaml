@@ -1,0 +1,8 @@
+name: Rooms
+view: no
+icon: mdi:sitemap
+entities:
+  - group.room_living_room
+  - group.room_parents_room
+  - group.room_child1_room
+  - group.room_child2_room

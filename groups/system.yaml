@@ -1,0 +1,7 @@
+name: System
+view: no
+icon: mdi:settings
+entities:
+  - sensor.cpu_use
+  - sensor.ram_free
+  - sensor.disk_use_home

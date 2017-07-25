@@ -1,0 +1,6 @@
+name: Version
+view: no
+icon: mdi:settings
+entities:
+  - sensor.ha_version
+  - sensor.ha_current

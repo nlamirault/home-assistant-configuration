@@ -1,0 +1,6 @@
+name: Family
+view: yes
+icon: mdi:account-multiple
+entities:
+  - device_tracker.androidhome
+  - device_tracker.iphonedesophiehome
