@@ -2,4 +2,4 @@ platform: nmap_tracker
 hosts: !secret nmap_range
 home_interval: 10
 exclude:
-  - !secret pi_master_ip
+  - !secret ha_ip
