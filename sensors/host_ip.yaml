@@ -1,0 +1,3 @@
+platform: dnsip
+hostname: !secret hostname_ip
+resolver: 8.8.8.8
