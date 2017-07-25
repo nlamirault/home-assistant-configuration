@@ -6,10 +6,10 @@ dependencies:
   pre:
     - sudo apt update -qq
     - sudo apt install python3-pip
-    - /usr/bin/pip3 install homeassistant==0.49.1
-    - cp fake_secrets.yaml secrets.yaml
+    - sudo /usr/bin/pip3 install homeassistant==0.49.1
 
 test:
   override:
+    - cp fake_secrets.yaml secrets.yaml
     - hass -c . --script check_config
 
