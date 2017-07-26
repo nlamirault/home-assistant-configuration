@@ -3,6 +3,9 @@
 [![Circle CI](https://circleci.com/gh/nlamirault/home-assistant-configuration/tree/master.svg?style=svg)](https://circleci.com/gh/nlamirault/home-assistant-configuration/tree/master)
 
 This is my Home Assistant configuration.
+I'm currently running Home Assistant version __0.49.1__. Installation used is [docker-compose](https://docs.docker.com/compose/), running on a Raspberry Pi 3, with [HypriotOS](https://blog.hypriot.com/downloads/)
+
+When the HA configuration is ready, Kubernetes will be the deployment platform.
 
 Supported devices :
 
