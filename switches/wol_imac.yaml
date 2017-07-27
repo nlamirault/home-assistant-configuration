@@ -1,3 +1,4 @@
 platform: wake_on_lan
-mac_address: !secret iMAC-mac
+mac_address: !secret imac_mac
+host: !secret imac_ip
 name: iMAC
