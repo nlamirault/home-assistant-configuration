@@ -64,7 +64,7 @@ logger: !include logger.yaml
 
 recorder: !include recorder.yaml
 
-mqtt: !include mqtt.yaml
+# mqtt: !include mqtt.yaml
 ifttt: !include ifttt.yaml
 telegram_bot: !include telegram_bot.yaml
 
