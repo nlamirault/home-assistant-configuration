@@ -1,9 +1,9 @@
 - alias: Nicolas is connected to the wifi
   trigger:
-    platform: state
-    entity_id: device_tracker.androidhome
-    from: 'not_home'
-    to: 'home'
+    - platform: state
+      entity_id: device_tracker.androidhome
+      from: 'not_home'
+      to: 'home'
   action:
     - service: notify.pushbullet
       data_template:
@@ -15,10 +15,10 @@
 
 - alias: Nicolas is disconnected to wifi
   trigger:
-    platform: state
-    entity_id: device_tracker.androidhome 
-    from: 'home'
-    to: 'not_home'
+    - platform: state
+      entity_id: device_tracker.androidhome 
+      from: 'home'
+      to: 'not_home'
   action:
     - service: notify.pushbullet
       data_template:
@@ -30,10 +30,10 @@
 
 - alias: Sophie is connected to the wifi
   trigger:
-    platform: state
-    entity_id: device_tracker.iphonedesophiehome
-    from: 'not_home'
-    to: 'home'
+    - platform: state
+      entity_id: device_tracker.iphonedesophiehome
+      from: 'not_home'
+      to: 'home'
   action:
     - service: notify.pushbullet
       data_template:
@@ -45,10 +45,10 @@
 
 - alias: Sophie is disconnected to the wifi
   trigger:
-    platform: state
-    entity_id: device_tracker.iphonedesophiehome
-    from: 'home'
-    to: 'not_home'
+    - platform: state
+      entity_id: device_tracker.iphonedesophiehome
+      from: 'home'
+      to: 'not_home'
   action:
     - service: notify.pushbullet
       data_template:

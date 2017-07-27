@@ -1,7 +1,7 @@
 - alias: Devices states changes
   trigger:
-    platform: state
-    entity_id: groups.devices
+    - platform: state
+      entity_id: groups.devices
   action:
     - service: notify.telegram
       data_template:

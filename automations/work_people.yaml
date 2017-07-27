@@ -1,10 +1,10 @@
 - alias: Nicolas enters work
   trigger:
-    platform: zone
-    entity_id: device_tracker.androidhome
-    zone: zone.work
+    - platform: zone
+      entity_id: device_tracker.androidhome
+      zone: zone.work
   action:
-    service: notify.pushbullet
-    data_template:
-      title: "Nicolas is at work"
-      message: "Nicolas is arrived at work"
+    - service: notify.pushbullet
+      data_template:
+        title: "Nicolas is at work"
+        message: "Nicolas is arrived at work"
