@@ -4,3 +4,4 @@ icon: mdi:server-network
 entities:
   - group.network_bandwidth
   - group.network_devices
+  - group.network_info
