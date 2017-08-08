@@ -2,5 +2,5 @@ name: Version
 view: no
 icon: mdi:settings
 entities:
-  - sensor.ha_version
-  - sensor.ha_current
+  - sensor.current_ha_version
+  - sensor.installed_version
