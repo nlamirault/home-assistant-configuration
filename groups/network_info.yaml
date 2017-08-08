@@ -1,0 +1,4 @@
+name: Network informations
+view: no
+entities:
+  - sensor.myipopendnscom
