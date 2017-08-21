@@ -1,20 +1,20 @@
-default: info
+default: warn
 logs:
   # libopenzwave: info
   # openzwave: info
-  # homeassistant.core: warn
-  # homeassistant.setup: warn
+  homeassistant.core: warn
+  homeassistant.setup: warn
   # homeassistant.loader: warn
-  homeassistant.components.automation: info
+  # homeassistant.components.automation: info
   # homeassistant.components.device_tracker: warn
   # homeassistant.components.discovery: warn
   # homeassistant.components.http: warn
   # homeassistant.components.media_player: warn
-  homeassistant.components.notify: debug
+  # homeassistant.components.notify: debug
   # homeassistant.components.recorder: warn
-  homeassistant.components.sensor: info
+  # homeassistant.components.sensor: info
   # homeassistant.components.sensor.command_line: warn
   # homeassistant.components.zwave: info
   # homeassistant.helpers.script: info
-  homeassistant.components.mqtt: debug
+  # homeassistant.components.mqtt: debug
   # homeassistant.components.api: warn
