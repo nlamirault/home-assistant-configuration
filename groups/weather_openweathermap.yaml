@@ -1,0 +1,5 @@
+name: OpenweatherMap
+view: no
+icon: mdi:weather
+entities:
+  - weather.openweathermap
