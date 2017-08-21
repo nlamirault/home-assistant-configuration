@@ -56,21 +56,21 @@ tts:
 # Log
 logger: !include logger.yaml
 
+recorder: !include recorder.yaml
+
 ######################################
 #
 #             Include ext files
 #
 ######################################
 
-recorder: !include recorder.yaml
-
 # mqtt: !include mqtt.yaml
 ifttt: !include ifttt.yaml
 telegram_bot: !include telegram_bot.yaml
 
-group: !include_dir_named groups
+xiaomi: !include xiaomi.yaml
 
-alert: !include_dir_named alerts
+group: !include_dir_named groups
 
 automation: !include_dir_merge_list automations
 
@@ -91,3 +91,4 @@ switch: !include_dir_list switches
 weather: !include_dir_list weather
 
 zone: !include_dir_list zones
+

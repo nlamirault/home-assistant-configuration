@@ -1,0 +1,3 @@
+gateways:
+  - sid: !secret xiaomi_mac
+    key: !secret xiaomi_key
