@@ -15,3 +15,8 @@ monitored_conditions:
   - minutely_summary
   - hourly_summary
   - daily_summary
+update_interval:
+    days: 0
+    hours: 0
+    minutes: 30
+    seconds: 00
