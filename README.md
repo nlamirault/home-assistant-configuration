@@ -9,14 +9,17 @@ When the HA configuration is ready, Kubernetes will be the deployment platform.
 
 Supported devices :
 
-| Use                | Device               |
-|--------------------|----------------------|
-| Box TV             | LiveboxTV by Orange  |
-| Home Assistant     | Raspberry PI 3       |
-| Media Players      | Kodi (OSMC)          |
-| Phones and tablets | Android, iOS         |
-| Computers          | iMAC, Linux, ...     |
-
+| Use                    | Device                         |
+|------------------------|--------------------------------|
+| Box TV                 | LiveboxTV by Orange            |
+| Home Assistant         | Raspberry PI 3                 |
+| Media Players          | Kodi (OSMC)                    |
+| Phones and tablets     | Android, iOS                   |
+| Computers              | iMAC, Linux, ...               |
+| Domotic                | Xiaomi gateway                 |
+| Door sensors           | Xiaomi door sensors x3         |
+| Motion sensors         | Xiaomi motion sensors x1       |
+| Temperature sensors    | Xiaomi Temperature sensors x4  |
 
 ## Screenshots
 
