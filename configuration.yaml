@@ -13,6 +13,9 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Paris
 
+  # Customization names, icons
+  # customize: !include_dir_merge_named customize
+
 # Show links to resources in log and frontend
 introduction:
 
@@ -84,11 +87,13 @@ notify: !include_dir_list notify
 
 device_tracker: !include_dir_list device_trackers
 
-sensor: !include_dir_list sensors
+sensor: !include_dir_merge_list sensors
 
 switch: !include_dir_list switches
 
 weather: !include_dir_list weather
 
 zone: !include_dir_list zones
+
+input_select: !include_dir_named input_select
 
