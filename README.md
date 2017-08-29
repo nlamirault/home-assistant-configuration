@@ -21,7 +21,23 @@ Supported devices :
 | Motion sensors         | Xiaomi motion sensors x1       |
 | Temperature sensors    | Xiaomi Temperature sensors x4  |
 
+
+## Automations
+
+### Security
+
+[x] Notify when phone are connected/disconnected to the wifi
+[ ] Notify when a new device is connected to the wifi
+[ ] Notify when the doors are opened
+[ ] Notify when there is motion
+
+### System Monitoring
+
+[ ] Notify when Home Assistant has restarted
+[ ] Notify when public IP address has changed
+
 ## Screenshots
+
 
 
 ## Contact

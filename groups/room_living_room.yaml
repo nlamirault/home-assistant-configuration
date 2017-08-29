@@ -4,3 +4,5 @@ icon: mdi:sofa
 entities:
   - media_player.liveboxtv
   - media_player.kodi_salon
+  - light.gateway_light_34ce00829889
+  - binary_sensor.door_window_sensor_158d000182efc9

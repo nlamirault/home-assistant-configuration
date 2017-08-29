@@ -61,6 +61,9 @@ logger: !include logger.yaml
 
 recorder: !include recorder.yaml
 
+# Enable Prometheus metrics (/api/prometheus)
+prometheus:
+
 ######################################
 #
 #             Include ext files

@@ -4,3 +4,4 @@ icon: mdi:server
 entities:
   - group.devices_main
   - group.devices_tracked
+  - group.devices_domotic

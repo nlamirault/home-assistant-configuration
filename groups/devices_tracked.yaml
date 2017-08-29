@@ -1,4 +1,4 @@
-name: Devices
+name: Mobile
 view: no
 entities:
   - device_tracker.androidhome
@@ -6,3 +6,6 @@ entities:
   - device_tracker.iphonedesophiehome
   - device_tracker.android1home
   - device_tracker.oablaptophome
+  - device_tracker.peravelaptophome
+  - device_tracker.android704ecc719c79b389home
+  - device_tracker.androida8a5b143eb2c09behome
