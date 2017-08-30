@@ -2,7 +2,24 @@
   token: !secret waqi_api_key
   locations:
     - !secret waqi_location
-  stations:
-    - !secret waqi_station
 
-
+- platform: template
+  sensors:
+    waqi:
+      value_template: >-
+        {%- if states.sensor.waqi_bastide_bordeaux_aquitaine_france.state | float < 51 %}
+        Très bon
+        {% elif states.sensor.waqi_bastide_bordeaux_aquitaine_france.state | float < 101 %}
+        Bon
+        {% elif states.sensor.waqi_bastide_bordeaux_aquitaine_france.state | float < 151 %}
+        Moyen
+        {% elif states.sensor.waqi_bastide_bordeaux_aquitaine_france.state | float < 201 %}
+        Médiocre
+        {% elif states.sensor.waqi_bastide_bordeaux_aquitaine_france.state | float < 301 %}
+        Mauvais
+        {% elif states.sensor.waqi_bastide_bordeaux_aquitaine_france.state | float > 300 %}
+        Très mauvais
+        {% else %}
+        Unknown
+        {%- endif %}
+      friendly_name: 'pollution Air'
