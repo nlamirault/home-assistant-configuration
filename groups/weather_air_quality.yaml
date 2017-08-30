@@ -2,5 +2,6 @@ name: Qualite de l'air
 view: no
 icon: mdi:weather
 entities:
-  - sensor.waqi_bordeaux
-
+  - sensor.waqi_bastide_bordeaux_aquitaine_france
+  - sensor.waqi_gambetta_bordeaux_aquitaine_france
+  - sensor.waqi_grand_parc_bordeaux_aquitaine_france

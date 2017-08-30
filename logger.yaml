@@ -1,9 +1,9 @@
 default: warn
-logs:
+# logs:
   # libopenzwave: info
   # openzwave: info
-  homeassistant.core: warn
-  homeassistant.setup: warn
+  # homeassistant.core: warn
+  # homeassistant.setup: warn
   # homeassistant.loader: warn
   # homeassistant.components.automation: info
   # homeassistant.components.device_tracker: warn

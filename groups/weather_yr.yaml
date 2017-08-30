@@ -2,6 +2,7 @@ name: Yr
 view: no
 icon: mdi:weather-pouring
 entities:
+  - sensor.weather_symbol
   - sensor.weather_temperature
   - sensor.weather_precipitation
   - sensor.weather_humidity
