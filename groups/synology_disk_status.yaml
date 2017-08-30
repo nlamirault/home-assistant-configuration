@@ -1,0 +1,14 @@
+name: Synology Disk status
+view: no
+entities:
+  - sensor.status_sda
+  - sensor.status_smart_sda
+  - sensor.temperature_sda
+  - sensor.status_sdb
+  - sensor.status_smart_sdb
+  - sensor.temperature_sdb
+  - sensor.status_volume_1
+  - sensor.total_size_volume_1
+  - sensor.type_volume_1
+  - sensor.used_space_volume_1
+  - sensor.volume_used_volume_1

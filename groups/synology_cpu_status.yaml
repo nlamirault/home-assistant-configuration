@@ -1,0 +1,8 @@
+name: Synology CPU status
+view: no
+entities:
+  - sensor.cpu_load_total
+  - sensor.cpu_load_user
+  - sensor.cpu_load_total
+  - sensor.cpu_load_other
+  - sensor.cpu_load_15_min

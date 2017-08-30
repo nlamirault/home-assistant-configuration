@@ -1,0 +1,5 @@
+name: Synology Network status
+view: no
+entities:
+  - sensor.network_up
+  - sensor.network_down

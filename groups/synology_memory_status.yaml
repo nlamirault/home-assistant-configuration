@@ -1,0 +1,10 @@
+name: Synology Memory status
+view: no
+entities:
+  - sensor.memory_usage_real
+  - sensor.memory_available_real
+  - sensor.memory_size
+  - sensor.memory_available_swap
+  - sensor.memory_cached
+  - sensor.memory_total_real
+  - sensor.memory_total_swap

@@ -1,0 +1,8 @@
+name: Synology
+view: yes
+icon: mdi:server-network
+entities:
+  - group.synology_cpus_status
+  - group.synology_network_status
+  - group.synology_memory_status
+  - group.synology_disk_status
