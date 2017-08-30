@@ -2,6 +2,7 @@ name: Rooms
 view: no
 icon: mdi:sitemap
 entities:
+  - group.room_kitchen
   - group.room_living_room
   - group.room_parents_room
   - group.room_child1_room

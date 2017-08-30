@@ -1,0 +1,5 @@
+name: Living Room
+view: yes
+entities:
+  - binary_sensor.door_window_sensor_158d000182efc9
+  - sensor.illumination_34ce00829889
