@@ -1,0 +1,7 @@
+name: Domotique
+view: no
+entities:
+  - device_tracker.lumigatewayv3miio56391144home
+  - binary_sensor.motion_sensor_158d00015cf428
+  - binary_sensor.door_window_sensor_158d000182efc9
+  - binary_sensor.switch_158d00015db130
