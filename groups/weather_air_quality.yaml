@@ -1,0 +1,6 @@
+name: Qualite de l'air
+view: no
+icon: mdi:weather
+entities:
+  - sensor.waqi_bordeaux
+
