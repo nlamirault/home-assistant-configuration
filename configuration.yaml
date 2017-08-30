@@ -60,7 +60,7 @@ tts:
 logger: !include logger.yaml
 
 recorder: !include recorder.yaml
-purge_days: 7
+  purge_days: 7
 
 # Enable Prometheus metrics (/api/prometheus)
 prometheus:
