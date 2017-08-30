@@ -1,0 +1,8 @@
+light.gateway_light_34ce00829889:
+  friendly_name: Lumiere Gateway Xiaomi 
+binary_sensor.switch_158d00015db130:
+  friendly_name: Boutton Switch Xiaomi
+binary_sensor.door_window_sensor_158d000182efc9:
+  friendly_name: Baie vitree cuisine
+binary_sensor.motion_sensor_158d00015cf428:
+  friendly_name: Detecteur mouvement cuisine
