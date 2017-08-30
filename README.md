@@ -24,15 +24,15 @@ When the HA configuration is ready, Kubernetes will be the deployment platform (
 
 ### Security
 
-[x] Notify when phone are connected/disconnected to the wifi
-[ ] Notify when a new device is connected to the wifi
-[ ] Notify when the doors are opened
-[ ] Notify when there is motion
+* [x] Notify when phone are connected/disconnected to the wifi
+* [ ] Notify when a new device is connected to the wifi
+* [ ] Notify when the doors are opened
+* [ ] Notify when there is motion
 
 ### System Monitoring
 
-[ ] Notify when Home Assistant has restarted
-[ ] Notify when public IP address has changed
+* [ ] Notify when Home Assistant has restarted
+* [ ] Notify when public IP address has changed
 
 ## Screenshots
 
