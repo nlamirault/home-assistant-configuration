@@ -1,6 +1,6 @@
-name: Family
+name: People
 view: yes
 icon: mdi:account-multiple
 entities:
-  - device_tracker.androidhome
-  - device_tracker.iphonedesophiehome
+  - group.people_family
+  - group.people_friends

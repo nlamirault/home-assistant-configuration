@@ -1,0 +1,6 @@
+name: Famille
+view: no
+entities:
+  - device_tracker.androidhome
+  - device_tracker.iphonedesophiehome
+  - device_tracker.android1home

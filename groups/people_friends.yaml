@@ -1,0 +1,5 @@
+name: Amis
+view: no
+icon: mdi:account-multiple
+entities:
+  - device_tracker.android85e030493488fecehome
