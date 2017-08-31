@@ -1,6 +1,6 @@
 name: Synology
 view: yes
-icon: mdi:server-network
+icon: mdi:cloud
 entities:
   - group.synology_cpus_status
   - group.synology_network_status
