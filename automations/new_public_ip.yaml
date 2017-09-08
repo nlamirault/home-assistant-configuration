@@ -12,9 +12,4 @@
       data_template:
         message: >
           'Public IP has changed: {{ trigger.from_state.state }} to {{ trigger.to_state.state }}'
-    - service: notify.slack
-      data_template:
-       title: New public IP
-       message: >
-          'Public IP has changed: {{ trigger.from_state.state }} to {{ trigger.to_state.state }}'
 
