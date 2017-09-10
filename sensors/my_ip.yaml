@@ -1,1 +1,6 @@
 - platform: dnsip
+
+- platform: rest
+  name: IP Location
+  resource: https://ifconfig.co/json
+  value_template: '{{ value_json.country }} {{ value_json.city }}'

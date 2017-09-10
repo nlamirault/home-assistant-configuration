@@ -2,3 +2,4 @@ name: Informations
 view: no
 entities:
   - sensor.myipopendnscom
+  - sensor.ip_location
