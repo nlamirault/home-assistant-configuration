@@ -2,7 +2,7 @@ name: Synology
 view: yes
 icon: mdi:cloud
 entities:
-  - group.synology_cpus_status
+  - group.synology_cpu_status
   - group.synology_network_status
   - group.synology_memory_status
   - group.synology_disk_status
