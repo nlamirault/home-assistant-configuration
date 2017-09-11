@@ -1,0 +1,7 @@
+ha_themes:
+  name: 'Select Theme'
+  options:
+    - default
+    - dark_teal
+  initial: 'default'
+  icon: 'mdi:palette'
