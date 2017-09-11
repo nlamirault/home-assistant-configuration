@@ -1,0 +1,5 @@
+name: Domotique
+view: no
+entities:
+  - sensor.illumination_34ce00829889
+  - binary_sensor.switch_158d00015db130

@@ -5,3 +5,4 @@ entities:
   - media_player.liveboxtv
   - media_player.kodi_salon
   - light.gateway_light_34ce00829889
+  - group.room_living_room_domotic

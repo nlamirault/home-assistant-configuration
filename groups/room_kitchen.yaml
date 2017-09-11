@@ -1,5 +1,5 @@
-name: Living Room
+name: Cuisine
 view: yes
+icon: mdi:cookie
 entities:
-  - binary_sensor.door_window_sensor_158d000182efc9
-  - sensor.illumination_34ce00829889
+  - group.room_kitchen_domotic
