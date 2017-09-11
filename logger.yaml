@@ -1,4 +1,4 @@
-default: warn
+default: info
 # logs:
   # libopenzwave: info
   # openzwave: info
