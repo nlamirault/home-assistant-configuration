@@ -1,0 +1,5 @@
+name: Chambre 2
+view: yes
+entities:
+  - group.room_bedroom_child2_domotic
+
