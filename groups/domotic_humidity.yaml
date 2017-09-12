@@ -1,0 +1,9 @@
+name: Humidité
+view: no
+entities:
+  - !secret sensor_xiaomi_humidity_living_room
+  - !secret sensor_xiaomi_humidity_kitchen
+  - !secret sensor_xiaomi_humidity_bedroom_parents
+  - !secret sensor_xiaomi_humidity_bedroom_child1
+  - !secret sensor_xiaomi_humidity_bedroom_child2
+

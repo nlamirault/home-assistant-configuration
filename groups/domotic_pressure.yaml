@@ -1,0 +1,9 @@
+name: Pression
+view: no
+entities:
+  - !secret sensor_xiaomi_pressure_living_room
+  - !secret sensor_xiaomi_pressure_kitchen
+  - !secret sensor_xiaomi_pressure_bedroom_parents
+  - !secret sensor_xiaomi_pressure_bedroom_child1
+  - !secret sensor_xiaomi_pressure_bedroom_child2
+

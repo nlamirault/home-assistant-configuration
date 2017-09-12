@@ -1,0 +1,9 @@
+name: Temperature
+view: no
+entities:
+  - !secret sensor_xiaomi_temperature_living_room
+  - !secret sensor_xiaomi_temperature_kitchen
+  - !secret sensor_xiaomi_temperature_bedroom_parents
+  - !secret sensor_xiaomi_temperature_bedroom_child1
+  - !secret sensor_xiaomi_temperature_bedroom_child2
+

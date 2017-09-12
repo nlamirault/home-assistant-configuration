@@ -1,0 +1,11 @@
+name: Domotique
+view: yes
+entities:
+  - group.domotic_door_window
+  - group.domotic_light
+  - group.domotic_motion
+  - group.domotic_switch
+  - group.domotic_temperature
+  - group.domotic_humitidy
+  - group.domotic_pressure
+

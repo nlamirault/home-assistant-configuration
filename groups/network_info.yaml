@@ -3,3 +3,4 @@ view: no
 entities:
   - sensor.myipopendnscom
   - sensor.ip_location
+  - !secret sensor_dns_name
