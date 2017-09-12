@@ -1,0 +1,37 @@
+- platform: wunderground
+  api_key: !secret wunderground_api_key
+  lang: 'FR'
+  monitored_conditions:
+    - alerts
+#      - dewpoint_c
+#      - dewpoint_string
+    - feelslike_c
+#      - feelslike_string
+#      - heat_index_c
+#      - heat_index_string
+#      - elevation
+#      - location
+#      - observation_time
+    - precip_1hr_metric
+    - precip_1hr_string
+    - precip_today_metric
+    - precip_today_string
+    - pressure_mb
+#      - pressure_trend
+    - relative_humidity
+#      - station_id
+#      - solarradiation
+#      - temperature_string
+    - temp_c
+    - UV
+#      - visibility_km
+    - weather
+    - wind_degrees
+    - wind_dir
+    - wind_gust_kph
+    - wind_kph
+    - wind_string
+    - weather_1d_metric
+    - weather_2d_metric
+    - weather_3d_metric
+    - weather_4d_metric

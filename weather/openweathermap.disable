@@ -1,0 +1,15 @@
+platform: openweathermap
+api_key: !secret openweather_api_key
+latitude: !secret home_latitude
+longitude: !secret home_longitude
+language: 'fr'
+forecast: 5
+monitored_conditions:
+  - weather
+  - temperature
+  - humidity
+  - clouds
+  - rain
+  - pressure
+  - wind_speed
+  - snow
