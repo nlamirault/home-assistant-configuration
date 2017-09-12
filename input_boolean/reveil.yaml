@@ -1,0 +1,4 @@
+reveil:
+  name: Reveil positionné
+  initial: off
+  icon: mdi:alarm

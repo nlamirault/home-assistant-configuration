@@ -1,0 +1,24 @@
+guest_mode:
+  name: Guest
+  icon: mdi:account-alert
+  initial: off
+
+away_mode:
+  name: Away
+  icon: mdi:exit-to-app
+  initial: off
+
+work_mode:
+  name: Work
+  icon: mdi:work
+  initial: off
+
+sleep_mode:
+  name: Sleep
+  icon: mdi:bed
+  initial: off
+  
+vacation_mode:
+  name: Vacation Mode
+  icon: mdi:beach
+  initial: off
