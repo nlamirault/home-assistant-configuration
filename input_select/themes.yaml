@@ -3,5 +3,6 @@ ha_themes:
   options:
     - default
     - dark_teal
+    - dark_orange
   initial: 'default'
   icon: 'mdi:palette'
