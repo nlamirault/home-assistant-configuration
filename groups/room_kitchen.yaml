@@ -1,5 +1,4 @@
 name: Cuisine
 view: yes
-icon: mdi:fridge
 entities:
   - group.room_kitchen_domotic

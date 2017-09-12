@@ -1,6 +1,5 @@
-name: Network
+name: Réseau
 view: yes
-icon: mdi:server-network
 entities:
   - group.network_bandwidth
   - group.network_devices

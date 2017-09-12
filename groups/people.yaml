@@ -1,6 +1,6 @@
-name: People
+name: Personnes
 view: yes
-icon: mdi:account-multiple
 entities:
   - group.people_family
   - group.people_friends
+  - group.people_pwned

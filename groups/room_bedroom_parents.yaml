@@ -1,5 +1,6 @@
 name: Chambre Parents
 view: yes
-icon: mdi:hotel
 entities:
   - media_player.kodi_parents
+  - group.room_bedroom_parents_domotic
+

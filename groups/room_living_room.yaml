@@ -1,6 +1,5 @@
 name: Salon
 view: yes
-icon: mdi:sofa
 entities:
   - media_player.liveboxtv
   - media_player.kodi_salon

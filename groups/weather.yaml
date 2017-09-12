@@ -1,6 +1,5 @@
-name: Weather
+name: Méteo
 view: yes
-icon: mdi:weather-pouring
 entities:
   - group.weather_darksky
   - group.weather_darksky_forecast
