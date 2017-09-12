@@ -4,4 +4,3 @@ group.default_view:
 group.automations:
   friendly_name: Automatisations
   order: 275
-  homebridge_hidden: true

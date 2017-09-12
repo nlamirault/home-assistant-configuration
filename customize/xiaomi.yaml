@@ -23,3 +23,10 @@
 !secret sensor_xiaomi_pressure_kitchen:
   friendly_name: Pression cuisine
 
+!secret sensor_xiaomi_pressure_bedroom_parents: 
+  friendly_name: Pression chambre parents
+!secret sensor_xiaomi_temperature_bedroom_parents:
+  friendly_name: Temperature chambre parents
+!secret sensor_xiaomi_humidity_bedroom_parents:
+  friendly_name: Humidite chambre parents
+
