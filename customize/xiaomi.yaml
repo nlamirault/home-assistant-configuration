@@ -30,3 +30,17 @@
 !secret sensor_xiaomi_humidity_bedroom_parents:
   friendly_name: Humidite chambre parents
 
+!secret sensor_xiaomi_temperature_bedroom_child1:
+  friendly_name: Température chambre !secret child1
+!secret sensor_xiaomi_humidity_bedroom_child1:
+  friendly_name: Humidité chambre !secret child1
+!secret sensor_xiaomi_pressure_bedroom_child1:
+  friendly_name: Pression chambre !secret child1
+
+!secret sensor_xiaomi_temperature_bedroom_child2:
+  friendly_name: Température chambre !secret child2
+!secret sensor_xiaomi_humidity_bedroom_child2:
+  friendly_name: Humidité chambe !secret child2
+!secret sensor_xiaomi_pressure_bedroom_child2:
+  friendly_name: Pression chambre !secret child2
+
