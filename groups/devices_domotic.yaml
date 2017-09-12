@@ -1,7 +1,24 @@
 name: Domotique
 view: no
 entities:
-  - device_tracker.lumigatewayv3miio56391144home
-  - binary_sensor.motion_sensor_158d00015cf428
-  - binary_sensor.door_window_sensor_158d000182efc9
-  - binary_sensor.switch_158d00015db130
+#  - device_tracker.lumigatewayv3miio56391144home
+#  - binary_sensor.motion_sensor_158d00015cf428
+#  - binary_sensor.door_window_sensor_158d000182efc9
+#  - binary_sensor.switch_158d00015db130
+#  - sensor.temperature_158d0001d5c4c5
+#  - sensor.humidity_158d0001d5c4c5
+#  - sensor.pressure_158d0001d5c4c5
+#  - sensor.temperature_158d0001d6bf5d
+#  - sensor.humidity_158d0001d6bf5d
+#  - sensor.pressure_158d0001d6bf5d
+  - !secret device_tracker_xiaomi_gateway
+  - !secret binary_sensor_xiaomi_motion_sensor_kitchen
+  - !secret binary_sensor_xiaomi_window_sensor_kitchen
+  - !secret binary_sensor_xiaomi_switch
+  - !secret sensor_xiaomi_temperature_living_room
+  - !secret sensor_xiaomi_humidity_living_room
+  - !secret sensor_xiaomi_pressure_living_room
+  - !secret sensor_xiaomi_temperature_kitchen
+  - !secret sensor_xiaomi_humidity_kitchen
+  - !secret sensor_xiaomi_pressure_kitchen
+
