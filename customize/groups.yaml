@@ -1,0 +1,7 @@
+group.default_view:
+  friendly_name: Maison
+  homebridge_hidden: true
+group.automations:
+  friendly_name: Automatisations
+  order: 275
+  homebridge_hidden: true
