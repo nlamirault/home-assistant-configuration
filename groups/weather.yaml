@@ -3,6 +3,9 @@ view: yes
 icon: mdi:weather-pouring
 entities:
   - group.weather_darksky
+  - group.weather_darksky_forecast
   - group.weather_openweathermap
-  - group.weather_yr
+#  - group.weather_yr
   - group.weather_air_quality
+  - group.weather_wunderground_current
+  - group.weather_wunderground_forecast
