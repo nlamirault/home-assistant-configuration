@@ -8,4 +8,5 @@ entities:
   - group.domotic_temperature
   - group.domotic_humidity
   - group.domotic_pressure
+  - group.domotic_volume
 

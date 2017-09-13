@@ -1,0 +1,5 @@
+xiaomi_ringtone_volume:
+  initial: 8
+  min: 1
+  max: 100
+  step: 1

@@ -1,0 +1,4 @@
+name: Volume
+view: no
+entities:
+  - !secret input_slider_xiaomi_ringtone_volume
