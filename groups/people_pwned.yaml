@@ -1,0 +1,7 @@
+name: Piratage email
+view: no
+entities:
+  - !secret breaches_nl
+  - !secret breaches_sa
+  - !secret breaches_jcl
+  - !secret breaches_fl
