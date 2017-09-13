@@ -1,0 +1,7 @@
+name: Divers
+view: no
+icon: mdi:settings
+entities:
+  - sensor.date
+  - sensor.time
+  - binary_sensor.workday_sensor
