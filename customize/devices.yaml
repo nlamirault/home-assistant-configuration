@@ -1,9 +1,47 @@
+!secret device_tracker_box_net:
+  friendly_name: Livebox
+  icon: mdi:access-point-network
+
+!secret device_tracker_box_tv:
+  friendly_name: Orange TV
+  icon: mdi:television
+
+!secret device_tracker_mediaplayer_1:
+  friendly_name: OSMC Salon
+  icon: mdi:kodi
+
+!secret device_tracker_mediaplayer_2:
+  friendly_name: OSMC Chambre parents
+  icon: mdi:kodi
+
+!secret device_tracker_nas:
+  friendly_name: Synology
+  icon: mdi:server-network
+
+!secret device_tracker_desktop_imac:
+  friendly_name: iMAC
+  icon: mdi:desktop-mac
+
+!secret device_tracker_laptop_home:
+  friendly_name: PC Portable
+  icon: mdi:laptop
+
+!secret device_tracker_laptop_work:
+  friendly_name: PC Portable boulot
+  icon: mdi:laptop
+
+#
+# Jarvis
+#
+
 !secret device_tracker_jarvis_master:
   friendly_name: Master
   icon: mdi:raspberrypi
+
 !secret device_tracker_jarvis_node1:
   friendly_name: Node 1
   icon: mdi:raspberrypi
+
 !secret ping_jarvis_node2:
   friendly_name: Node 2
   icon: mdi:raspberrypi

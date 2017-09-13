@@ -1,3 +1,7 @@
+#
+# Pwned
+#
+
 !secret breaches_nl:
   friendly_name: !secret person_nl
   icon: mdi:security-network
@@ -11,14 +15,39 @@
   friendly_name: !secret person_fl
   icon: mdi:security-network
 
-sensor.speedtest_download:
-  icon: mdi:cloud-download
+#
+# Devices
+#
 
-sensor.speedtest_upload:
-  icon: mdi:cloud-upload
+!secret device_tracker_phone_nl:
+  friendly_name: !secret person_nl
+  icon: mdi:cellphone-android
 
-sensor.speedtest_ping:
-  icon: mdi:cloud-check
+!secret device_tracker_phone_sa:
+  friendly_name: !secret person_sa
+  icon: mdi:cellphone-iphone
 
-sensor.fastcom_download:
-  icon: mdi:cloud-download
+!secret device_tracker_phone_jcl:
+  friendly_name: !secret person_jcl
+  icon: mdi:cellphone-android
+
+!secret device_tracker_phone_fl:
+  friendly_name: !secret person_fl
+  icon: mdi:cellphone-android
+
+!secret device_tracker_phone_cl:
+  friendly_name: !secret person_cl
+  icon: mdi:cellphone-android
+
+!secret device_tracker_phone_cg:
+  friendly_name: !secret person_cg
+  icon: mdi:cellphone-android
+
+!secret device_tracker_tablet_nexus:
+  friendly_name: Nexus 7
+  icon: mdi:tablet-android
+
+!secret device_tracker_tablet_danew:
+  friendly_name: Danew
+  icon: mdi:tablet-android
+

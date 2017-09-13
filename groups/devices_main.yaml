@@ -1,6 +1,12 @@
 name: Principaux
 view: no
 entities:
+#  - !secret device_tracker_box_net
+#  - !secret device_tracker_box_tv
+#  - !secret device_tracker_nas
+#  - !secret device_tracker_desktop_imac
+#  - !secret device_tracker_mediaplayer_1
+#  - !secret device_tracker_mediaplayer_2
   - device_tracker.liveboxhome
   - device_tracker.orangetvhome
   - device_tracker.synohome
