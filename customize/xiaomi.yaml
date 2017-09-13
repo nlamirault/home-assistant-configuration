@@ -8,18 +8,21 @@
 !secret sensor_xiaomi_gateway_illumination:
   friendly_name: Luminosité Gateway Xiaomi
 
+!secret input_slider_xiaomi_ringtone_volume:
+  friendly_name: Volume Gateway Xiaomi
+
 !secret binary_sensor_xiaomi_switch:
   friendly_name: Boutton Switch Xiaomi
 
 !secret sensor_xiaomi_temperature_living_room:
-  friendly_name: Temperature salon
+  friendly_name: !secret house_livingroom_temperature
 
 !secret sensor_xiaomi_humidity_living_room:
-  friendly_name: Humidite salon
+  friendly_name: !secret house_livingroom_humidity
   icon: mdi:water-percent
 
 !secret sensor_xiaomi_pressure_living_room:
-  friendly_name: Pression salon
+  friendly_name: !secret house_livingroom_pressure
   icon: mdi:gauge
 
 !secret binary_sensor_xiaomi_window_sensor_kitchen:
@@ -29,46 +32,46 @@
   friendly_name: Detecteur mouvement cuisine
 
 !secret sensor_xiaomi_temperature_kitchen:
-  friendly_name: Temperature cuisine
+  friendly_name: !secret house_kitchen_temperature
 
 !secret sensor_xiaomi_humidity_kitchen:
-  friendly_name: Humidite cuisine
+  friendly_name: !secret house_kitchen_humidity
   icon: mdi:water-percent
 
 !secret sensor_xiaomi_pressure_kitchen:
-  friendly_name: Pression cuisine
+  friendly_name: !secret house_kitchen_pressure
   icon: mdi:gauge
 
 !secret sensor_xiaomi_pressure_bedroom_parents: 
-  friendly_name: Pression chambre parents
+  friendly_name: !secret house_bedroom_parents_pressure
   icon: mdi:gauge
 
 !secret sensor_xiaomi_temperature_bedroom_parents:
-  friendly_name: Temperature chambre parents
+  friendly_name: !secret house_bedroom_parents_temperature
 
 !secret sensor_xiaomi_humidity_bedroom_parents:
-  friendly_name: Humidite chambre parents
+  friendly_name: !secret house_bedroom_parents_humidity
   icon: mdi:water-percent
 
 !secret sensor_xiaomi_temperature_bedroom_child1:
-  friendly_name: Température chambre !secret child1
+  friendly_name: !secret house_bedroom_child1_temperature
 
 !secret sensor_xiaomi_humidity_bedroom_child1:
-  friendly_name: Humidité chambre !secret child1
+  friendly_name: !secret house_bedroom_child1_humidity
   icon: mdi:water-percent
 
 !secret sensor_xiaomi_pressure_bedroom_child1:
-  friendly_name: Pression chambre !secret child1
+  friendly_name: !secret house_bedroom_child1_pressure
   icon: mdi:gauge
 
 !secret sensor_xiaomi_temperature_bedroom_child2:
-  friendly_name: Température chambre !secret child2
+  friendly_name: !secret house_bedroom_child2_temperature
 
 !secret sensor_xiaomi_humidity_bedroom_child2:
-  friendly_name: Humidité chambe !secret child2
+  friendly_name: !secret house_bedroom_child2_humidity
   icon: mdi:water-percent
 
 !secret sensor_xiaomi_pressure_bedroom_child2:
-  friendly_name: Pression chambre !secret child2
+  friendly_name: !secret house_bedroom_child2_pressure
   icon: mdi:gauge
 
