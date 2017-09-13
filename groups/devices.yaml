@@ -4,3 +4,4 @@ entities:
   - group.devices_main
   - group.devices_tracked
   - group.devices_domotic
+  - group.devices_jarvis

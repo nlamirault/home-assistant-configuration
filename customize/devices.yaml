@@ -1,0 +1,10 @@
+!secret device_tracker_jarvis_master:
+  friendly_name: Master
+  icon: mdi:raspberrypi
+!secret device_tracker_jarvis_node1:
+  friendly_name: Node 1
+  icon: mdi:raspberrypi
+!secret ping_jarvis_node2:
+  friendly_name: Node 2
+  icon: mdi:raspberrypi
+

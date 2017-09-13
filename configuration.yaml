@@ -126,3 +126,5 @@ binary_sensor: !include_dir_merge_list binary_sensor
 input_select: !include_dir_merge_named input_select
 
 input_boolean: !include_dir_merge_named input_boolean
+
+camera: !include_dir_merge_list camera

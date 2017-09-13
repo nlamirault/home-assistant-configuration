@@ -1,0 +1,3 @@
+platform: ping
+hosts:
+  ha_ip: !secret ha_ip

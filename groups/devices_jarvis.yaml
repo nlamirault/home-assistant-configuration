@@ -1,0 +1,7 @@
+name: Jarvis
+view: no
+entities:
+  - !secret device_tracker_jarvis_master
+  - !secret device_tracker_jarvis_node1
+  - !secret ping_jarvis_node2
+
