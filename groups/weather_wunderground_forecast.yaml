@@ -1,4 +1,4 @@
-name: Weather Underground Prévisions
+name: Prévisions
 view: no
 icon: mdi:weather-pouring
 entities:

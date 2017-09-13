@@ -1,4 +1,4 @@
-name: Weather Underground
+name: Aujourd'hui
 view: no
 icon: mdi:weather-pouring
 entities:
