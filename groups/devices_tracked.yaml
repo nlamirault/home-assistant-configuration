@@ -1,11 +1,11 @@
 name: Mobile
 view: no
 entities:
-  - device_tracker.androidhome
-  - device_tracker.oablaptophome
-  - device_tracker.iphonedesophiehome
-  - device_tracker.android1home
-  - device_tracker.peravelaptophome
-  - device_tracker.android704ecc719c79b389home
-  - device_tracker.androida8a5b143eb2c09behome
-  - device_tracker.android294ca37ebe3d68cfhome
+  - !secret device_tracker_phone_nl
+  - !secret device_tracker_phone_sa
+  - !secret device_tracker_phone_jcl
+  - !secret device_tracker_phone_cl
+  - !secret device_tracker_laptop_home
+  - !secret device_tracker_laptop_work
+  - !secret device_tracker_tablet_danew
+  - !secret device_tracker_tablet_nexus

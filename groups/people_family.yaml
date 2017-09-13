@@ -1,6 +1,6 @@
 name: Famille
 view: no
 entities:
-  - device_tracker.androidhome
-  - device_tracker.iphonedesophiehome
-  - device_tracker.android1home
+  - !secret device_tracker_phone_nl
+  - !secret device_tracker_phone_sa
+  - !secret device_tracker_phone_jcl
