@@ -1,8 +1,8 @@
 name: Méteo
 view: yes
 entities:
-  - group.weather_darksky
-  - group.weather_darksky_forecast
+#  - group.weather_darksky
+#  - group.weather_darksky_forecast
   - group.weather_openweathermap
 #  - group.weather_yr
   - group.weather_air_quality

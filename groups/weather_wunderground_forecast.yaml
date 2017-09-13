@@ -1,4 +1,4 @@
-name: Weather Underground Forecase
+name: Weather Underground Prévisions
 view: no
 icon: mdi:weather-pouring
 entities:

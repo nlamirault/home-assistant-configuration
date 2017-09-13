@@ -9,8 +9,10 @@
   friendly_name: Temperature salon
 !secret sensor_xiaomi_humidity_living_room:
   friendly_name: Humidite salon
+  icon: mdi:water-percent
 !secret sensor_xiaomi_pressure_living_room:
   friendly_name: Pression salon
+  icon: mdi:gauge
 
 !secret binary_sensor_xiaomi_window_sensor_kitchen:
   friendly_name: Baie vitree cuisine
@@ -20,27 +22,35 @@
   friendly_name: Temperature cuisine
 !secret sensor_xiaomi_humidity_kitchen:
   friendly_name: Humidite cuisine
+  icon: mdi:water-percent
 !secret sensor_xiaomi_pressure_kitchen:
   friendly_name: Pression cuisine
+  icon: mdi:gauge
 
 !secret sensor_xiaomi_pressure_bedroom_parents: 
   friendly_name: Pression chambre parents
+  icon: mdi:gauge
 !secret sensor_xiaomi_temperature_bedroom_parents:
   friendly_name: Temperature chambre parents
 !secret sensor_xiaomi_humidity_bedroom_parents:
   friendly_name: Humidite chambre parents
+  icon: mdi:water-percent
 
 !secret sensor_xiaomi_temperature_bedroom_child1:
   friendly_name: Température chambre !secret child1
 !secret sensor_xiaomi_humidity_bedroom_child1:
   friendly_name: Humidité chambre !secret child1
+  icon: mdi:water-percent
 !secret sensor_xiaomi_pressure_bedroom_child1:
   friendly_name: Pression chambre !secret child1
+  icon: mdi:gauge
 
 !secret sensor_xiaomi_temperature_bedroom_child2:
   friendly_name: Température chambre !secret child2
 !secret sensor_xiaomi_humidity_bedroom_child2:
   friendly_name: Humidité chambe !secret child2
+  icon: mdi:water-percent
 !secret sensor_xiaomi_pressure_bedroom_child2:
   friendly_name: Pression chambre !secret child2
+  icon: mdi:gauge
 
