@@ -1,0 +1,8 @@
+name: Modes
+view: yes
+entities:
+  - input_boolean.away_mode
+  - input_boolean.guest_mode
+  - input_boolean.sleep_mode
+  - input_boolean.work_mode
+  - input_boolean.vacation_mode
