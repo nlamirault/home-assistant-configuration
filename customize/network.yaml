@@ -1,3 +1,7 @@
+#
+# Speedtest / Fast.com 
+#
+
 sensor.speedtest_download:
   icon: mdi:cloud-download
 
@@ -9,3 +13,29 @@ sensor.speedtest_ping:
 
 sensor.fastcom_download:
   icon: mdi:cloud-download
+
+#
+# PiHole
+#
+
+sensor.ads_percentage_today:
+  icon: mdi:ticket-percent
+
+sensor.domains_being_blocked:
+  icon: mdi:do-not-disturb
+
+sensor.ads_blocked_today:
+  icon: mdi:do-not-disturb
+
+sensor.dns_queries_today:
+  icon: mdi:note-text
+
+sensor.unique_domains:
+  icon: mdi:approval
+
+sensor.queries_forwarded:
+  icon: mdi:arrange-send-backward
+
+sensor.queries_cached:
+  icon: mdi:animation
+
