@@ -75,3 +75,8 @@
   friendly_name: !secret house_bedroom_child2_pressure
   icon: mdi:gauge
 
+!secret device_tracker_xiaomi_light_1:
+  friendly_name: !secret house_light_1
+  icon: mdi:lightbulb
+
+
