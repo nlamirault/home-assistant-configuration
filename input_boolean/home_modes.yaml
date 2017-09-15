@@ -1,6 +1,6 @@
 guest_mode:
   name: Guest
-  icon: mdi:account-alert
+  icon: mdi:home
   initial: off
 
 away_mode:

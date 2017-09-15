@@ -1,10 +1,55 @@
-- alias: "Away"
+- alias: All residents have left the house
   trigger:
     - platform: state
-      entity_id: group.all_devices
-      from: "home"
+      entity_id: group.people_family
       to: "not_home"
+      for:
+        minutes: 10
   action:
     - service: input_boolean.turn_on
       entity_id: input_boolean.away_mode
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.guest_mode
+
+- alias: A resident has returned home
+  trigger:
+    - platform: state
+      entity_id: group.people_family
+      to: "not_home"
+      for:
+        minutes: 1
+  action:
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.away_mode
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.guest_mode
+
+#- alias: House is sleeping
+#  trigger:
+#    - platform: state
+#      entity_id: group.lights_indoor
+#      to: 'off'
+#      for:
+#        minutes: 10
+#    condition:
+#      condition: time
+#      after: '23:55:00'
+#      before: '05:30:00'
+#    action:
+#      - service: input_boolean.turn_on
+#        entity_id: input_boolean.sleep_mode
+
+- alias: Turn off sleep mode 1 hour after sunrise
+  trigger:
+    - platform: sun
+      event: sunrise
+      offset: '01:00:00'
+    condition:
+      condition: state
+      entity_id: input_boolean.sleep_mode
+      state: 'on'
+    action:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.sleep_mode
+
 
