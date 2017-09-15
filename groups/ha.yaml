@@ -5,3 +5,5 @@ entities:
   - group.day
   - group.system
   - group.version
+  - input_select.ha_themes
+  - input_select.log_level
