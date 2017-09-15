@@ -1,0 +1,6 @@
+- platform: xiaomi_philipslight
+  name: Xiaomi Philips Smart LED Ball
+  host: !secret light_xiaomi_1_ip
+  token: !secret light_xiaomi_1_token
+
+

@@ -64,13 +64,13 @@ recorder: !include recorder.yaml
 
 # Enable Prometheus metrics (/api/prometheus)
 prometheus:
-  include:
-    domains:
-      - binary_sensor
-      - light
-      - switch
-      - media_player
-      - weather
+#  include:
+#    domains:
+#      - binary_sensor
+#      - light
+#      - switch
+#      - media_player
+#      - weather
 
 # Store to InfluxDB
 influxdb:
@@ -114,6 +114,8 @@ notify: !include_dir_list notify
 device_tracker: !include_dir_list device_trackers
 
 sensor: !include_dir_merge_list sensors
+
+light: !include_dir_merge_list lights
 
 switch: !include_dir_list switches
 
