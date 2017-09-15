@@ -30,6 +30,10 @@
   friendly_name: PC Portable boulot
   icon: mdi:laptop
 
+!secret device_tracker_laptop_jcl:
+  friendly_name: PC Portable JeanClaude
+  icon: mdi:laptop
+
 #
 # Jarvis
 #
