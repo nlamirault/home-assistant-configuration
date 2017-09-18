@@ -2,7 +2,7 @@
   display_options:
     - 'time'
     - 'date'
-    - 'date_time'
-    - 'time_date'
-    - 'time_utc'
-    - 'beat'
+    #- 'date_time'
+    #- 'time_date'
+    #- 'time_utc'
+    #- 'beat'
