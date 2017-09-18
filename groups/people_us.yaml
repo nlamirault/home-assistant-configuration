@@ -1,0 +1,5 @@
+name: Nous
+view: no
+entities:
+  - !secret device_tracker_phone_nl
+  - !secret device_tracker_phone_sa
