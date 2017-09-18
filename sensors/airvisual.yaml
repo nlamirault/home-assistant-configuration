@@ -1,0 +1,7 @@
+- platform: airvisual
+  api_key: !secret api_key_airvisual
+  monitored_conditions:
+    - us
+  latitude: !secret latitude
+  longitude: !secret longitude
+  radius: 500
