@@ -1,0 +1,40 @@
+- alias: 'Breach email nl'
+  trigger:
+    platform: numeric_state
+    entity_id: !secret breaches_nl
+    above: 1
+  action:
+    - service: notify.telegram
+      data:
+        message: 'Warning - Piratage email !secret person_nl'
+
+- alias: 'Breach email sa'
+  trigger:
+    platform: numeric_state
+    entity_id: !secret breaches_sa
+    above: 1
+  action:
+    - service: notify.telegram
+      data:
+        message: 'Warning - Piratage email !secret person_sa'
+
+- alias: 'Breach email jcl'
+  trigger:
+    platform: numeric_state
+    entity_id: !secret breaches_jcl
+    above: 0
+  action:
+    - service: notify.telegram
+      data:
+        message: 'Warning - Piratage email !secret person_jcl'
+
+- alias: 'Breach email fl'
+  trigger:
+    platform: numeric_state
+    entity_id: !secret breaches_fl
+    above: 0
+  action:
+    - service: notify.telegram
+      data:
+        message: 'Warning - Piratage email !secret person_fl'
+
