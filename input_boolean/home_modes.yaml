@@ -1,6 +1,6 @@
 guest_mode:
   name: Guest
-  icon: mdi:home
+  icon: mdi:account-multiple
   initial: off
 
 away_mode:
@@ -22,3 +22,9 @@ vacation_mode:
   name: Vacation Mode
   icon: mdi:beach
   initial: off
+
+workday_mode:
+  name: Work days Mode
+  icon: mdi:calendar-check
+  initial: off
+
