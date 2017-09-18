@@ -43,6 +43,10 @@
   friendly_name: !secret person_cg
   icon: mdi:cellphone-android
 
+!secret device_tracker_phone_sf:
+  friendly_name: !secret person_sf
+  icon: mdi:cellphone-iphone
+
 !secret device_tracker_tablet_nexus:
   friendly_name: Nexus 7
   icon: mdi:tablet-android

@@ -1,6 +1,7 @@
 name: Personnes
 view: yes
 entities:
+  - group.people_us
   - group.people_family
   - group.people_friends
   - group.people_pwned
