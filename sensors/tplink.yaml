@@ -1,0 +1,18 @@
+- platform: template
+  sensors:
+    tplink_multimedia_power_current:
+      value_template: '{{ states.switch.multimedia_salon.attributes["Current consumption"].split(" ")[0] }}'
+      unit_of_measurement: 'W'
+
+- platform: template
+  sensors:
+    tplink_multimedia_power_daily:
+      value_template: '{{ states.switch.multimedia_salon.attributes["Daily consumption"].split(" ")[0] }}'
+      unit_of_measurement: 'kW'
+
+- platform: template
+  sensors:
+    tplink_multimedia_power_total:
+      value_template: '{{ states.switch.multimedia_salon.attributes["Total consumption"].split(" ")[0] }}'
+      unit_of_measurement: 'kW'
+

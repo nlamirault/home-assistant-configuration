@@ -1,0 +1,7 @@
+name: Energie
+view: no
+entities:
+  - sensor.tplink_multimedia_power_current
+  - sensor.tplink_multimedia_power_daily
+  - sensor.tplink_multimedia_power_total
+

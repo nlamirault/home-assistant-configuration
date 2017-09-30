@@ -1,0 +1,13 @@
+!secret device_tracker_tplink_livingroom_media:
+  friendly_name: Prise multimedia salon
+  icon: mdi:power-plug
+
+sensor.tplink_multimedia_power_current:
+  friendly_name: Consommation courante multimédia
+
+sensor.tplink_multimedia_power_daily:
+  friendly_name: Consommation journalière multimédia
+
+sensor.tplink_multimedia_power_total:
+  friendly_name: Consommation totale multimédia
+

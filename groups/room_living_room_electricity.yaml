@@ -1,0 +1,4 @@
+name: Electricité
+view: no
+entities:
+  - !secret switch_tplink_living_room
