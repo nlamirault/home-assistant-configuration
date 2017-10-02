@@ -14,7 +14,6 @@ before_script:
 
 build:check_conf:
   stage: build
-  <<: *install_dependencies
   script:
     - cp fake_secrets.yaml secrets.yaml
     - hass -c . --script check_config
