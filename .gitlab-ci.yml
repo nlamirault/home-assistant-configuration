@@ -4,7 +4,7 @@ services:
 
 variables:
   DOCKER_DRIVER: overlay
-  HA_VERSION=0.53.1
+  HA_VERSION: 0.53.1
 
 before_script:
   - docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
