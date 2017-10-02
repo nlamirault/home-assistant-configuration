@@ -10,8 +10,9 @@ When the HA configuration is ready, Kubernetes will be the deployment platform (
 | Use                    | Device                         |
 |------------------------|--------------------------------|
 | Box TV                 | LiveboxTV by Orange            |
-| Home Assistant         | Raspberry PI 3                 |
-| Media Players          | Kodi (OSMC)                    |
+| Home Assistant         | Raspberry PI 3 (Docker image)  |
+| NAS                    | Synology DS212j                |
+| Media Players          | Kodi (OSMC) x2                 |
 | Phones and tablets     | Android, iOS                   |
 | Computers              | iMAC, Linux, ...               |
 | Domotic                | Xiaomi gateway                 |
@@ -31,8 +32,8 @@ When the HA configuration is ready, Kubernetes will be the deployment platform (
 
 ### System Monitoring
 
-* [ ] Notify when Home Assistant has restarted
-* [ ] Notify when public IP address has changed
+* [x] Notify when Home Assistant has restarted
+* [x] Notify when public IP address has changed
 
 ## Screenshots
 
