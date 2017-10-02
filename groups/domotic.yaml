@@ -9,4 +9,5 @@ entities:
   - group.domotic_humidity
   - group.domotic_pressure
   - group.domotic_volume
+  - group.domotic_energy
 

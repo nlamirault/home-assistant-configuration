@@ -3,4 +3,4 @@ view: no
 entities:
   - !secret device_tracker_xiaomi_gateway
   - !secret device_tracker_xiaomi_light_1
-
+  - !secret device_tracker_tplink_livingroom_media

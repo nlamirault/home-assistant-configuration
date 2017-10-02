@@ -2,6 +2,7 @@ name: HA
 view: yes
 icon: mdi:home-assistant
 entities:
+  - group.all_automations
   - group.day
   - group.system
   - group.version

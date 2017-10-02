@@ -4,10 +4,13 @@
 
 sensor.tplink_multimedia_power_current:
   friendly_name: Consommation courante multimédia
+  icon: mdi:power-plug
 
 sensor.tplink_multimedia_power_daily:
   friendly_name: Consommation journalière multimédia
+  icon: mdi:power-plug
 
 sensor.tplink_multimedia_power_total:
   friendly_name: Consommation totale multimédia
+  icon: mdi:power-plug
 

@@ -4,6 +4,7 @@ entities:
   - !secret device_tracker_phone_nl
   - !secret device_tracker_phone_sa
   - !secret device_tracker_phone_jcl
+  - !secret device_tracker_phone_fl
   - !secret device_tracker_phone_cl
   - !secret device_tracker_laptop_home
   - !secret device_tracker_laptop_work

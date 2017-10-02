@@ -4,3 +4,4 @@ entities:
   - sensor.myipopendnscom
   - sensor.ip_location
   - !secret sensor_dns_name
+  - !secret sensor_dns_name_2

@@ -2,3 +2,4 @@ name: Commandes
 view: no
 entities:
   - !secret binary_sensor_xiaomi_switch
+  - !secret switch_tplink_living_room
