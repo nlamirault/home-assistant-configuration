@@ -1,0 +1,23 @@
+image: docker:git
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay
+
+before_script:
+  - docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
+
+.install_dependencies: &install_dependencies
+  script:
+    - sudo apt update -qq
+    - sudo apt install python3-pip
+    - sudo /usr/bin/pip3 install homeassistant==${HA_VERSION}
+
+build:check_conf:
+  stage: build
+  <<: *install_dependencies
+  script:
+    - cp fake_secrets.yaml secrets.yaml
+    - hass -c . --script check_config
+
