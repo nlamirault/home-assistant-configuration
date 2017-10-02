@@ -1,0 +1,32 @@
+- alias: Start teleworking
+  trigger:
+    - platform: time
+      at: '08:30:00'
+  condition: 
+    - condition: time
+      weekday:
+        - thu
+  action:
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.work_mode
+    - service: notify.telegram
+      data_template:
+        message: >
+          'Début de télétravail.'
+
+- alias: Stop teleworking
+  trigger:
+    - platform: time
+      at: '18:00:00'
+  condition: 
+    - condition: time
+      weekday:
+        - thu
+  action:
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.work_mode
+    - service: notify.telegram
+      data_template:
+        message: >
+          'Fin de télétravail.'
+
