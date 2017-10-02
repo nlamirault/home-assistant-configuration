@@ -1,15 +1,13 @@
-image: docker:git
-services:
-  - docker:dind
 
 variables:
-  DOCKER_DRIVER: overlay
   HA_VERSION: 0.53.1
 
+stages:
+  - build
+
 before_script:
-  - docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
-  - apt update -qq
-  - apt install python3-pip
+  - apt-get update -qy
+  - apt-get install -y python3-pip
   - /usr/bin/pip3 install homeassistant==${HA_VERSION}
 
 build:check_conf:
