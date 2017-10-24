@@ -46,7 +46,7 @@
   friendly_name: Node 1
   icon: mdi:raspberrypi
 
-!secret ping_jarvis_node2:
+!secret device_tracker_jarvis_node2:
   friendly_name: Node 2
   icon: mdi:raspberrypi
 
