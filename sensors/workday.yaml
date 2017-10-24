@@ -1,2 +1,0 @@
-- platform: workday
-  country: !secret workday_country
