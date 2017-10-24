@@ -1,0 +1,3 @@
+- platform: teleinfo
+  name: "edf"
+  device: "/dev/ttyUSB0"
