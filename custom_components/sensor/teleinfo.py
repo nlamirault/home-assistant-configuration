@@ -28,7 +28,7 @@ _LOGGER = logging.getLogger(__name__)
 DOMAIN = 'teleinfo'
 
 CONF_DEVICE = 'device'
-CONF_ATTRIBUTION = "Energy details provided by EDF Teleinfo."
+CONF_ATTRIBUTION = "Provided by EDF Teleinfo."
 
 DEFAULT_DEVICE = '/dev/ttyUSB0'
 DEFAULT_NAME = 'teleinfo'
@@ -96,7 +96,8 @@ class TeleinfoSensor(Entity):
     @property
     def device_state_attributes(self):
         """Return the state attributes."""
-        self._attributes
+        self._attributes[ATTR_ATTRIBUTION] = CONF_ATTRIBUTION
+        return self._attributes
 
     def update(self):
         """Get the latest data from Teleinfo device and updates the state."""
