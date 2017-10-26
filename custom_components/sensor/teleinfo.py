@@ -44,6 +44,8 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Optional(CONF_NAME, default=DEFAULT_NAME): cv.string,
 })
 
+TELEINFO_AVAILABLE_VALUES = ['HCHC', 'HCHP', 'IINST', 'IMAX', 'PAPP','ISOUSC']
+
 
 def setup_platform(hass, config, add_devices,
                          discovery_info=None):
@@ -106,14 +108,15 @@ class TeleinfoSensor(Entity):
             _LOGGER.warn("Don't receive energy data from Teleinfo!")
             return
         # self._attributes = self._data.frame
-        _LOGGER.warn("Frame read: %s" % self._data.frame)
+        _LOGGER.info("Frame read: %s" % self._data.frame)
         for info in self._data.frame:
-            _LOGGER.info("Teleinfo data: %s" % info)
-            self._attributes[info['name']] = info['value']
+            if info['name'] in TELEINFO_AVAILABLE_VALUES:
+                self._attributes[info['name']] = int(info['value'])
+            else:
+                self._attributes[info['name']] = info['value']
         self._state = self._attributes['ADCO']
-        _LOGGER.info("Result: state=%s attributes=%s" % (
+        _LOGGER.debug("Sensor: state=%s attributes=%s" % (
             self._state, self._attributes))
-        _LOGGER.warn(self.entity_id)
 
 
 class TeleinfoData(object):
