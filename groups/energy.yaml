@@ -1,0 +1,5 @@
+name: Consommation
+view: yes
+entities:
+  - group.energy_electricity
+

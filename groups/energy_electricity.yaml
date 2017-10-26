@@ -1,0 +1,13 @@
+name: Electricité
+view: no
+entities:
+  - sensor.edf
+  - sensor.teleinfo_hchc
+  - sensor.teleinfo_hchp
+  - sensor.teleinfo_hhphc
+  - sensor.teleinfo_iinst
+  - sensor.teleinfo_imax
+  - sensor.teleinfo_papp
+  - sensor.teleinfo_ptec
+  - sensor.teleinfo_isousc
+

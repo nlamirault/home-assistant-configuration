@@ -1,0 +1,32 @@
+sensor.teleinfo_hchc:
+  friendly_name: Index Heures Creuses
+  icon: mdi:power-plug
+
+sensor.teleinfo_hchp:
+  friendly_name: Index Heures Pleines
+  icon: mdi:power-plug
+
+sensor.teleinfo_hhphc:
+  friendly_name: Groupe horaire
+  icon: mdi:power-plug
+
+sensor.teleinfo_iinst:
+  friendly_name: Intensité instantanée
+  icon: mdi:power-plug
+
+sensor.teleinfo_imax:
+  friendly_name: Intensité maximale
+  icon: mdi:power-plug
+
+sensor.teleinfo_papp:
+  friendly_name: Puissance apparente
+  icon: mdi:power-plug
+
+sensor.teleinfo_ptec:
+  friendly_name: Période tarifaire en cours
+  icon: mdi:power-plug
+
+sensor.teleinfo_isousc:
+  friendly_name: Intensité souscrite
+  icon: mdi:power-plug
+

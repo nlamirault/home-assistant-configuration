@@ -1,3 +1,52 @@
 - platform: teleinfo
   name: "edf"
   device: "/dev/ttyUSB0"
+
+- platform: template
+  sensors:
+    teleinfo_hchc:
+      value_template: '{{ states.sensor.edf.attributes["HCHC"] }}'
+      unit_of_measurement: 'Wh'
+
+- platform: template
+  sensors:
+    teleinfo_hchp:
+      value_template: '{{ states.sensor.edf.attributes["HCHP"] }}'
+      unit_of_measurement: 'Wh'
+
+- platform: template
+  sensors:
+    teleinfo_hhphc:
+      value_template: '{{ states.sensor.edf.attributes["HHPHC"] }}'
+      unit_of_measurement: ''
+
+- platform: template
+  sensors:
+    teleinfo_iinst:
+      value_template: '{{ states.sensor.edf.attributes["IINST"] }}'
+      unit_of_measurement: 'A'
+
+- platform: template
+  sensors:
+    teleinfo_imax:
+      value_template: '{{ states.sensor.edf.attributes["IMAX"] }}'
+      unit_of_measurement: 'A'
+
+- platform: template
+  sensors:
+    teleinfo_papp:
+      value_template: '{{ states.sensor.edf.attributes["PAPP"] }}'
+      unit_of_measurement: 'vA'
+
+- platform: template
+  sensors:
+    teleinfo_ptec:
+      value_template: '{{ states.sensor.edf.attributes["PTEC"] }}'
+      unit_of_measurement: ''
+
+- platform: template
+  sensors:
+    teleinfo_isousc:
+      value_template: '{{ states.sensor.edf.attributes["ISOUSC"] }}'
+      unit_of_measurement: 'A'
+

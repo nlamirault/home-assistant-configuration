@@ -2,3 +2,4 @@ name: Ouverture
 view: no
 entities:
   - !secret binary_sensor_xiaomi_window_sensor_kitchen
+  - !secret binary_sensor_xiaomi_door_sensor_front
