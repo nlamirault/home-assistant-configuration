@@ -10,4 +10,5 @@ entities:
   - group.domotic_pressure
   - group.domotic_volume
   - group.domotic_energy
+  - group.domotic_battery
 

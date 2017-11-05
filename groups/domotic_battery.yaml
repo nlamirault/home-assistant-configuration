@@ -1,0 +1,10 @@
+name: Batterie
+view: no
+entities:
+  - sensor.living_room_temperature_battery
+  - sensor.kitchen_temperature_battery
+  - sensor.bedroom_parents_temperature_battery
+  - sensor.bedroom_child1_temperature_battery
+  - sensor.bedroom_child2_temperature_battery
+  - sensor.kitchen_motion_sensor_battery
+  - sensor.kitchen_window_sensor_battery
