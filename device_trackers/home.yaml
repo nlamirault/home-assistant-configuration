@@ -1,5 +1,5 @@
-platform: nmap_tracker
-hosts: !secret nmap_range
-home_interval: 10
-exclude:
-  - !secret ha_ip
+- platform: nmap_tracker
+  hosts: !secret nmap_range
+  home_interval: 10
+  exclude:
+    - !secret ha_ip
