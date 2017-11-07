@@ -1,3 +1,7 @@
+sensor.edf:
+  friendly_name: Compteur
+  icon: mdi:power-plug
+
 sensor.teleinfo_hchc:
   friendly_name: Index Heures Creuses
   icon: mdi:power-plug
