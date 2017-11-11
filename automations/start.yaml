@@ -9,3 +9,12 @@
       data:
         message: "Home Assistant started"
 
+- alias: Guest mode on start
+  trigger:
+    platform: homeassistant
+    event: start
+  action:
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.away_mode
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.guest_mode
