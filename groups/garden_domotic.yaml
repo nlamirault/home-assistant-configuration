@@ -1,0 +1,7 @@
+name: Domotique
+view: no
+entities:
+  - !secret sensor_xiaomi_temperature_garden
+  - !secret sensor_xiaomi_humidity_garden
+  - !secret sensor_xiaomi_pressure_garden
+
