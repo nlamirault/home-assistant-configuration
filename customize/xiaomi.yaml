@@ -79,4 +79,14 @@
   friendly_name: !secret house_light_1
   icon: mdi:lightbulb
 
+!secret sensor_xiaomi_temperature_garden:
+  friendly_name: Température
+ 
+!secret sensor_xiaomi_humidity_garden:
+  friendly_name: Humidité
+  icon: mdi:water-percent
+
+!secret sensor_xiaomi_pressure_garden:
+  friendly_name: Pression
+  icon: mdi:gauge
 

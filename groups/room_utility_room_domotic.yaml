@@ -1,0 +1,5 @@
+name: Domotique
+view: no
+entities:
+  - !secret sensor_xiaomi_water_leak
+

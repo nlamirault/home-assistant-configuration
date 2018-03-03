@@ -1,0 +1,4 @@
+name: Buanderie 
+view: yes
+entities:
+  - group.room_utility_room_domotic
