@@ -1,18 +1,18 @@
 - platform: template
   sensors:
+    tplink_multimedia_intensity_current:
+      value_template: '{{ states.switch.multimedia_salon.attributes["current"] | replace(" A", "") | float }}'
+      unit_of_measurement: 'A'
     tplink_multimedia_power_current:
-      value_template: '{{ states.switch.multimedia_salon.attributes["Current consumption"].split(" ")[0] }}'
+      value_template: '{{ states.switch.multimedia_salon.attributes["current_consumption"] | replace(" W", "") | float }}'
       unit_of_measurement: 'W'
-
-- platform: template
-  sensors:
     tplink_multimedia_power_daily:
-      value_template: '{{ states.switch.multimedia_salon.attributes["Daily consumption"].split(" ")[0] }}'
+      value_template: '{{ states.switch.multimedia_salon.attributes["daily_consumption"] | replace(" kW", "") | float }}'
       unit_of_measurement: 'kW'
-
-- platform: template
-  sensors:
     tplink_multimedia_power_total:
-      value_template: '{{ states.switch.multimedia_salon.attributes["Total consumption"].split(" ")[0] }}'
+      value_template: '{{ states.switch.multimedia_salon.attributes["total_consumption"] | replace(" kW", "") | float }}'
       unit_of_measurement: 'kW'
+    tplink_multimedia_voltage:
+      value_template: '{{ states.switch.multimedia_salon.attributes["voltage"] | replace(" V", "") | float }}'
+      unit_of_measurement: 'V'
 
