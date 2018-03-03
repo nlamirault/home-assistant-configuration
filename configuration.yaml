@@ -97,7 +97,7 @@ influxdb:
 ifttt: !include ifttt.yaml
 telegram_bot: !include telegram_bot.yaml
 
-xiaomi: !include xiaomi.yaml
+xiaomi_aqara: !include xiaomi_aqara.yaml
 
 group: !include_dir_named groups
 
