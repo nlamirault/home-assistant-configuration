@@ -76,15 +76,15 @@ prometheus:
 influxdb:
   host: !secret influxdb_host
   port: 8086
-  database: home_assistant
+  database: !secret influxdb_database
   username: !secret influxdb_username
   password: !secret influxdb_password
 #  ssl: false
 #  verify_ssl: false
   default_measurement: state
-  override_measurement: state
-#  tags:
-#    source: jarvis
+#  override_measurement: state
+  tags:
+    source: jarvis
 
 
 ######################################
@@ -129,7 +129,7 @@ input_select: !include_dir_merge_named input_select
 
 input_boolean: !include_dir_merge_named input_boolean
 
-input_slider: !include_dir_merge_named input_slider
+# input_slider: !include_dir_merge_named input_slider
 
 camera: !include_dir_merge_list camera
 
