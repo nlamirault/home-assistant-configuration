@@ -10,6 +10,9 @@
       entity_id: input_boolean.away_mode
     - service: input_boolean.turn_off
       entity_id: input_boolean.guest_mode
+    - service: notify.telegram
+      data:
+        message: "Nobody at home. Enable away mode"
 
 - alias: A resident has returned home
   trigger:
@@ -23,6 +26,9 @@
       entity_id: input_boolean.away_mode
     - service: input_boolean.turn_on
       entity_id: input_boolean.guest_mode
+    - service: notify.telegram
+      data:
+        message: "Someone is at home. Enable guest mode"
 
 #- alias: House is sleeping
 #  trigger:
