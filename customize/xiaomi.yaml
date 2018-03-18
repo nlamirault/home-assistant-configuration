@@ -15,78 +15,113 @@
   friendly_name: Boutton Switch Xiaomi
 
 !secret sensor_xiaomi_temperature_living_room:
-  friendly_name: !secret house_livingroom_temperature
+  friendly_name: !secret domo_temperature
+  icon: mdi:thermometer
 
 !secret sensor_xiaomi_humidity_living_room:
-  friendly_name: !secret house_livingroom_humidity
+  friendly_name: !secret domo_humidity
   icon: mdi:water-percent
 
 !secret sensor_xiaomi_pressure_living_room:
-  friendly_name: !secret house_livingroom_pressure
+  friendly_name: !secret domo_pressure
   icon: mdi:gauge
 
-!secret binary_sensor_xiaomi_window_sensor_kitchen:
-  friendly_name: Baie vitree cuisine
-
 !secret binary_sensor_xiaomi_motion_sensor_kitchen:
-  friendly_name: Detecteur mouvement cuisine
+  friendly_name: !secret domo_motion
 
 !secret sensor_xiaomi_temperature_kitchen:
-  friendly_name: !secret house_kitchen_temperature
+  friendly_name: !secret domo_temperature
+  icon: mdi:thermometer
 
 !secret sensor_xiaomi_humidity_kitchen:
-  friendly_name: !secret house_kitchen_humidity
+  friendly_name: !secret domo_humidity
   icon: mdi:water-percent
 
 !secret sensor_xiaomi_pressure_kitchen:
-  friendly_name: !secret house_kitchen_pressure
+  friendly_name: !secret domo_pressure
   icon: mdi:gauge
 
 !secret sensor_xiaomi_pressure_bedroom_parents: 
-  friendly_name: !secret house_bedroom_parents_pressure
+  friendly_name: !secret domo_pressure
   icon: mdi:gauge
 
 !secret sensor_xiaomi_temperature_bedroom_parents:
-  friendly_name: !secret house_bedroom_parents_temperature
+  friendly_name: !secret domo_temperature
+  icon: mdi:thermometer
 
 !secret sensor_xiaomi_humidity_bedroom_parents:
-  friendly_name: !secret house_bedroom_parents_humidity
+  friendly_name: !secret domo_humidity
   icon: mdi:water-percent
 
 !secret sensor_xiaomi_temperature_bedroom_child1:
-  friendly_name: !secret house_bedroom_child1_temperature
+  friendly_name: !secret domo_temperature
+  icon: mdi:thermometer
 
 !secret sensor_xiaomi_humidity_bedroom_child1:
-  friendly_name: !secret house_bedroom_child1_humidity
+  friendly_name: !secret domo_humidity
   icon: mdi:water-percent
 
 !secret sensor_xiaomi_pressure_bedroom_child1:
-  friendly_name: !secret house_bedroom_child1_pressure
+  friendly_name: !secret domo_pressure
   icon: mdi:gauge
 
 !secret sensor_xiaomi_temperature_bedroom_child2:
-  friendly_name: !secret house_bedroom_child2_temperature
+  friendly_name: !secret domo_temperature
+  icon: mdi:thermometer
 
 !secret sensor_xiaomi_humidity_bedroom_child2:
-  friendly_name: !secret house_bedroom_child2_humidity
+  friendly_name: !secret domo_humidity
   icon: mdi:water-percent
 
 !secret sensor_xiaomi_pressure_bedroom_child2:
-  friendly_name: !secret house_bedroom_child2_pressure
+  friendly_name: !secret domo_pressure
   icon: mdi:gauge
 
 !secret device_tracker_xiaomi_light_1:
-  friendly_name: !secret house_light_1
+  friendly_name: !secret domo_light
   icon: mdi:lightbulb
 
 !secret sensor_xiaomi_temperature_garden:
-  friendly_name: Température
+  friendly_name: !secret domo_temperature
+  icon: mdi:thermometer
  
 !secret sensor_xiaomi_humidity_garden:
-  friendly_name: Humidité
+  friendly_name: !secret domo_humidity
   icon: mdi:water-percent
 
 !secret sensor_xiaomi_pressure_garden:
-  friendly_name: Pression
+  friendly_name: !secret domo_pressure
+  icon: mdi:gauge
+
+!secret sensor_yeelight_dressing:
+  friendly_name: !secret domo_light
+  icon: mdi:lightbulb
+
+!secret sensor_yeelight_bedroom_child2:
+  friendly_name: !secret domo_light
+  icon: mdi:lightbulb
+
+!secret sensor_xiaomi_temperature_bathroom:
+  friendly_name: !secret domo_temperature
+  icon: mdi:thermometer
+
+!secret sensor_xiaomi_humidity_bathroom:
+  friendly_name: !secret domo_humidity
+  icon: mdi:water-percent
+
+!secret sensor_xiaomi_pressure_bathroom:
+  friendly_name: !secret domo_pressure
+  icon: mdi:gauge
+
+!secret sensor_xiaomi_temperature_bathroom_floor:
+  friendly_name: !secret domo_temperature
+  icon: mdi:thermometer
+
+!secret sensor_xiaomi_humidity_bathroom_floor:
+  friendly_name: !secret domo_humidity
+  icon: mdi:water-percent
+
+!secret sensor_xiaomi_pressure_bathroom_floor:
+  friendly_name: !secret domo_pressure
   icon: mdi:gauge
 
