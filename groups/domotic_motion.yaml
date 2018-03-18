@@ -1,4 +1,0 @@
-name: Mouvements
-view: no
-entities:
-  - !secret binary_sensor_xiaomi_motion_sensor_kitchen

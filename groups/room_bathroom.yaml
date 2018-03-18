@@ -1,4 +1,4 @@
-name: Salle de bain
+name: Salle d'eau
 view: yes
 entities:
   - group.room_bathroom_domotic

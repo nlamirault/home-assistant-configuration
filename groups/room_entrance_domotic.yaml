@@ -1,0 +1,5 @@
+name: Domotique
+view: no
+entities:
+  - !secret binary_sensor_xiaomi_door_sensor_front
+

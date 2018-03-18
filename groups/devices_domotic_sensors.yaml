@@ -2,8 +2,7 @@ name: Domotique
 view: no
 entities:
   - !secret device_tracker_xiaomi_gateway
-  - !secret binary_sensor_xiaomi_motion_sensor_kitchen
-  - !secret binary_sensor_xiaomi_window_sensor_kitchen
+  - !secret binary_sensor_xiaomi_door_sensor_front
   - !secret binary_sensor_xiaomi_switch
   - !secret sensor_xiaomi_temperature_living_room
   - !secret sensor_xiaomi_humidity_living_room
@@ -11,4 +10,5 @@ entities:
   - !secret sensor_xiaomi_temperature_kitchen
   - !secret sensor_xiaomi_humidity_kitchen
   - !secret sensor_xiaomi_pressure_kitchen
+  - !secret binary_sensor_xiaomi_motion_sensor_kitchen
 
