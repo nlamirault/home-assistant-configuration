@@ -3,3 +3,4 @@ view: no
 icon: mdi:server
 entities:
   - device_tracker.nmap_tracker
+  - device_tracker.ping

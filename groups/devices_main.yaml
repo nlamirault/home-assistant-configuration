@@ -13,3 +13,5 @@ entities:
   - device_tracker.imachome
   - device_tracker.osmchome
   - device_tracker.osmcchambrehome
+  - device_tracker.googlehomehome
+  - device_tracker.pc64home
