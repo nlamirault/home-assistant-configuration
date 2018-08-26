@@ -1,0 +1,3 @@
+platform: cast
+name: chromecast parents
+host: !secret chromecast_parents_ip
