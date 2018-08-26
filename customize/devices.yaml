@@ -22,6 +22,14 @@
   friendly_name: iMAC
   icon: mdi:desktop-mac
 
+!secret device_tracker_google_home:
+  friendly_name: Google Home mini
+  icon: mdi:google-home
+
+!secret device_tracker_chromecast:
+  friendly_name: Chromecast
+  icon: mdi:cast
+
 !secret device_tracker_laptop_home:
   friendly_name: PC Portable
   icon: mdi:laptop
@@ -50,3 +58,6 @@
   friendly_name: Node 2
   icon: mdi:raspberrypi
 
+!secret device_tracker_jarvis_node3:
+  friendly_name: Node 3
+  icon: mdi:raspberrypi
