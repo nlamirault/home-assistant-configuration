@@ -20,7 +20,11 @@
       entity_id: group.people_us, group.people_family
       to: "home"
       for:
-        minutes: 1
+        minutes: 10
+  condition:
+    condition: state
+    entity_id: input_boolean.guest_mode
+    state: 'off'
   action:
     - service: input_boolean.turn_off
       entity_id: input_boolean.away_mode
@@ -28,7 +32,7 @@
       entity_id: input_boolean.guest_mode
     - service: notify.telegram
       data:
-        message: "Someone is at home. Enable guest mode"
+        message: "Resident is at home. Enable guest mode"
 
 #- alias: House is sleeping
 #  trigger:
