@@ -1,4 +1,2 @@
-- platform: command_line
+- platform: version
   name: Installed version
-  # command: "head -5 /config/.HA_VERSION"
-  command: "head -5 .HA_VERSION"
