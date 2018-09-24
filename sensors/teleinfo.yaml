@@ -58,3 +58,62 @@
       unit_of_measurement: 'A'
       icon_template: mdi:flash
 
+- platform: influxdb
+  host: !secret influxdb_host
+  queries:
+    - name: HC Energy Consumed (today so far)
+      where: '"entity_id" = ''teleinfo_hchc'' AND time >= ''{{ strptime(states("sensor.date"), "%Y-%m-%d") }}''   '
+      measurement: '"Wh"'
+      group_function: spread
+      value_template: '{{ value | round(2) }}'
+      unit_of_measurement: Wh
+
+    - name: HP Energy Consumed (today so far)
+      where: '"entity_id" = ''teleinfo_hchp'' AND time >= ''{{ strptime(states("sensor.date"), "%Y-%m-%d") }}''   '
+      measurement: '"Wh"'
+      group_function: spread
+      value_template: '{{ value | round(2) }}'
+      unit_of_measurement: Wh
+
+    - name: HC Energy Consumed (last day)
+      where: '"entity_id" = ''teleinfo_hchc'' AND time >= now() - 1d'
+      measurement: '"Wh"'
+      group_function: spread
+      value_template: '{{ value | round(2) }}'
+      unit_of_measurement: Wh
+
+    - name: HP Energy Consumed (last day)
+      where: '"entity_id" = ''teleinfo_hchp'' AND time >= now() - 1d'
+      measurement: '"Wh"'
+      group_function: spread
+      value_template: '{{ value | round(2) }}'
+      unit_of_measurement: Wh
+
+    - name: HC Energy Consumed (last week)
+      where: '"entity_id" = ''teleinfo_hchc'' AND time >= now() - 1w'
+      measurement: '"Wh"'
+      group_function: spread
+      value_template: '{{ value | round(2) }}'
+      unit_of_measurement: Wh
+
+    - name: HP Energy Consumed (last week)
+      where: '"entity_id" = ''teleinfo_hchp'' AND time >= now() - 1w'
+      measurement: '"Wh"'
+      group_function: spread
+      value_template: '{{ value | round(2) }}'
+      unit_of_measurement: Wh
+
+    - name: HC Energy Consumed (last month)
+      where: '"entity_id" = ''teleinfo_hchc'' AND time >= now() - 1m'
+      measurement: '"Wh"'
+      group_function: spread
+      value_template: '{{ value | round(2) }}'
+      unit_of_measurement: Wh
+
+    - name: HP Energy Consumed (last month)
+      where: '"entity_id" = ''teleinfo_hchp'' AND time >= now() - 1m'
+      measurement: '"Wh"'
+      group_function: spread
+      value_template: '{{ value | round(2) }}'
+      unit_of_measurement: Wh
+
