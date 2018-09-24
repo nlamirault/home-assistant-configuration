@@ -8,4 +8,8 @@
     - service: notify.telegram
       data:
         message: "Home Assistant started"
-
+    # - service: tts.google_say
+    #   data:
+    #     language: fr
+    #     entity_id: media_player.google_home__salon
+    #     message: Home Assistant démarré
