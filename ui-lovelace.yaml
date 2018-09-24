@@ -1,0 +1,308 @@
+resources:
+  - url: /local/mini-media-player/mini-media-player.js
+    type: js
+title: Jarvis
+views:
+  - id: system
+    title: Système
+    # theme: darkblue
+    cards:
+      - type: entities
+        title: Datetime
+        entities:
+          - sensor.date
+          - sensor.time
+      - type: entities
+        title: Host
+        entities:
+          - sensor.processor_use
+          - sensor.memory_use_percent
+          - sensor.disk_use_percent_home
+      - type: entities
+        title: System
+        entities:
+          - sensor.current_ha_version
+          - sensor.installed_version
+          - updater.updater
+      - type: entities
+        title: Select
+        entities:
+          - input_select.ha_themes
+          - input_select.log_level
+  - id: home
+    title: Maison
+    cards:
+      - type: vertical-stack
+        cards:
+        - type: picture-glance
+          image: /local/IMG_20180831_170133.jpg
+          entities:
+            - entity: !secret device_tracker_phone_nl
+              icon: mdi:human-male
+              name: !secret person_nl
+            - entity: !secret device_tracker_phone_sa
+              icon: mdi:human-female
+              name: !secret person_sa
+          title: "Présence"
+        - type: entities
+          entities:
+            - input_boolean.away_mode
+            - input_boolean.guest_mode
+            - input_boolean.sleep_mode
+            - input_boolean.work_mode
+            - input_boolean.vacation_mode
+
+  - id: hosts
+    title: Appareils
+    cards:
+      - type: entities
+        title: Principaux
+        entities:
+          - device_tracker.liveboxhome
+          - device_tracker.orangetvhome
+          - device_tracker.synohome
+          - device_tracker.imachome
+          - device_tracker.osmchome
+          - device_tracker.osmcchambrehome
+          - device_tracker.googlehomehome
+          - device_tracker.pc64home
+      - type: entities
+        title: Mobiles
+        entities:
+          - !secret device_tracker_phone_nl
+          - !secret device_tracker_phone_sa
+          - !secret device_tracker_phone_jcl
+          - !secret device_tracker_phone_fl
+          - !secret device_tracker_phone_cl
+          - !secret device_tracker_laptop_home
+          - !secret device_tracker_laptop_work
+          - !secret device_tracker_tablet_danew
+          - !secret device_tracker_tablet_nexus
+          - !secret device_tracker_tablet_fire_jcl
+      - type: entities
+        title: Domotique
+        entities:
+          - !secret device_tracker_xiaomi_gateway
+          - !secret device_tracker_xiaomi_light_1
+          - !secret device_tracker_tplink_livingroom_media
+      - type: entities
+        title: Jarvis
+        entities:
+          - !secret device_tracker_jarvis_master
+          - !secret device_tracker_jarvis_node1
+          - !secret device_tracker_jarvis_node2
+          - !secret device_tracker_jarvis_node3
+          - !secret ping_jarvis_zero1
+  - id: house 
+    title: Capteurs
+    cards:
+      - type: entities
+        #- type: picture-glance
+        #image: /local/IMG_20180831_170133.jpg
+        title: Salon
+        entities:
+          - !secret sensor_xiaomi_temperature_living_room
+          - !secret sensor_xiaomi_humidity_living_room
+          - !secret sensor_xiaomi_pressure_living_room
+          - sensor.living_room_temperature_battery
+          - !secret switch_tplink_living_room
+          - media_player.liveboxtv
+          - media_player.kodi_salon
+      - type: entities
+        #- type: picture-glance
+        #image: /local/IMG_20180904_145302.jpg
+        title: Cuisine
+        entities:
+          - !secret binary_sensor_xiaomi_motion_sensor_kitchen
+          - !secret sensor_xiaomi_temperature_kitchen
+          - !secret sensor_xiaomi_humidity_kitchen
+          - !secret sensor_xiaomi_pressure_kitchen
+          - sensor.temperature_158d000233f797
+      - type: entities
+        #- type: picture-glance
+        #image: /local/IMG_20180904_142842.jpg
+        title: Salle d'eau
+        entities:
+          - !secret sensor_xiaomi_temperature_bathroom
+          - !secret sensor_xiaomi_humidity_bathroom
+          - !secret sensor_xiaomi_pressure_bathroom
+      - type: entities
+        #- type: picture-glance
+        #image: /local/IMG_20180831_170133.jpg
+        title: Salle de bain
+        entities:
+          - !secret sensor_xiaomi_temperature_bathroom_floor
+          - !secret sensor_xiaomi_humidity_bathroom_floor
+          - !secret sensor_xiaomi_pressure_bathroom_floor
+      - type: entities
+        #- type: picture-glance
+        #image: /local/IMG_20180904_142850.jpg
+        title: Chambre parents
+        entities:
+          - !secret sensor_xiaomi_pressure_bedroom_parents
+          - !secret sensor_xiaomi_temperature_bedroom_parents
+          - !secret sensor_xiaomi_humidity_bedroom_parents
+          - !secret sensor_yeelight_dressing
+          - media_player.kodi_parents
+          - entity: media_player.kodi_parents
+            type: "custom:mini-media-player"
+            groupe: false
+      - type: entities
+        #- type: picture-glance
+        #image: /local/IMG_20180904_142938.jpg
+        title: Chambre 1
+        entities:
+          - !secret sensor_xiaomi_pressure_bedroom_child1
+          - !secret sensor_xiaomi_temperature_bedroom_child1
+          - !secret sensor_xiaomi_humidity_bedroom_child1
+      - type: entities
+        #- type: picture-glance
+        #image: /local/IMG_20180904_142958.jpg
+        title: Chambre 2
+        entities:
+          - !secret sensor_xiaomi_pressure_bedroom_child2
+          - !secret sensor_xiaomi_temperature_bedroom_child2
+          - !secret sensor_xiaomi_humidity_bedroom_child2
+      - type: entities
+        #- type: picture-glance
+        #image: /local/IMG_20180831_170133.jpg
+        title: Jardin
+        entities:
+          - !secret sensor_xiaomi_temperature_garden
+          - !secret sensor_xiaomi_humidity_garden
+          - !secret sensor_xiaomi_pressure_garden
+      - type: entities
+        #- type: picture-glance
+        #image: /local/IMG_20180904_145322.jpg
+        title: Buanderie
+        entities:
+          - !secret sensor_xiaomi_gateway_illumination
+          - !secret binary_sensor_xiaomi_switch
+          - !secret sensor_xiaomi_boiler_water_leak
+          - !secret sensor_xiaomi_wine_cellar_water_leak
+          - !secret light_xiaomi_gateway
+          - sensor.temperature_158d000232347f
+      - type: entities
+        #- type: picture-glance
+        #image: /local/IMG_20180831_170133.jpg
+        title: Entrée
+        entities:
+          - !secret binary_sensor_xiaomi_door_sensor_front
+  - id: energy
+    title: Consommation
+    cards:
+      - type: entities
+        title: EDF
+        entities:
+          - sensor.edf
+          - sensor.teleinfo_hchc
+          - sensor.teleinfo_hchp
+          - sensor.teleinfo_hhphc
+          - sensor.teleinfo_iinst
+          - sensor.teleinfo_imax
+          - sensor.teleinfo_papp
+          - sensor.teleinfo_ptec
+          - sensor.teleinfo_isousc
+  - id: network
+    title: Réseau
+    cards:
+      - type: entities
+        title: Bande passante
+        entities:
+          - sensor.fastcom_download
+          - sensor.speedtest_download
+          - sensor.speedtest_upload
+          - sensor.speedtest_ping
+      - type: entities
+        title: Informations
+        entities:
+          - sensor.myipopendnscom
+          - sensor.ip_location
+          - !secret sensor_dns_name
+          - !secret sensor_dns_name_2
+      - type: entities
+        title: PiHole
+        entities:
+          - sensor.pihole_ads_blocked_today
+          - sensor.pihole_ads_percentage_blocked_today
+          - sensor.pihole_dns_queries_cached
+          - sensor.pihole_dns_queries_forwarded
+          - sensor.pihole_dns_queries_today
+          - sensor.pihole_dns_unique_clients
+          - sensor.pihole_dns_unique_domains
+          - sensor.pihole_domains_blocked
+  - id: nas
+    title: NAS
+    cards:
+      - type: entities
+        title: CPU
+        entities:
+          - sensor.cpu_load_1_min
+          - sensor.cpu_load_5_min
+          - sensor.cpu_load_15_min
+          - sensor.cpu_load_user
+          - sensor.cpu_load_system
+          - sensor.cpu_load_other
+          - sensor.cpu_load_total
+      - type: entities
+        title: Network
+        entities:
+          - sensor.network_up
+          - sensor.network_down
+      - type: entities
+        title: Disk
+        entities:
+          - sensor.status_sda
+          - sensor.status_smart_sda
+          - sensor.temperature_sda
+          - sensor.status_sdb
+          - sensor.status_smart_sdb
+          - sensor.temperature_sdb
+          - sensor.status_volume_1
+          - sensor.total_size_volume_1
+          - sensor.type_volume_1
+          - sensor.used_space_volume_1
+          - sensor.volume_used_volume_1
+      - type: entities
+        title: Memory
+        entities:
+          - sensor.memory_usage_real
+          - sensor.memory_available_real
+          - sensor.memory_size
+          - sensor.memory_available_swap
+          - sensor.memory_cached
+          - sensor.memory_total_real
+          - sensor.memory_total_swap
+  - id: weather
+    title: Météo
+    cards:
+      - type: entities
+        title: Temps
+        entities:
+          - sensor.dark_sky_apparent_temperature
+          - sensor.dark_sky_cloud_coverage
+          - sensor.dark_sky_dew_point
+          - sensor.dark_sky_humidity
+          - sensor.dark_sky_precip
+          - sensor.dark_sky_precip_intensity
+          - sensor.dark_sky_pressure
+          - sensor.dark_sky_temperature
+          - sensor.dark_sky_wind_bearing
+          - sensor.dark_sky_wind_speed
+      - type: entities
+        title: Qualité Air
+        entities:
+          - sensor.waqi
+          - sensor.waqi_bastide_bordeaux_aquitaine_france
+          - sensor.waqi_gambetta_bordeaux_aquitaine_france
+          - sensor.waqi_grand_parc_bordeaux_aquitaine_france
+          - sensor.us_air_pollution_level
+          - sensor.us_air_quality_index
+          - sensor.us_main_pollutant
+        #- type: iframe
+        #url: https://embed.windy.com/embed2.html
+        #title: Animation
+      - type: iframe
+        url: https://embed.windy.com/embed2.html?lat=42.521&lon=-1.033&zoom=7&level=surface&overlay=radar&menu=&message=&marker=&calendar=12&pressure=&type=map&location=coordinates&detail=true&detailLat=44.866&detailLon=-0.563&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1
+        aspect_ratio: 100%
+
