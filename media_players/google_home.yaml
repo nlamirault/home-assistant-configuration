@@ -1,3 +1,0 @@
-- platform: cast
-  name: home_mini_living_room
-  host: !secret home_mini_ip

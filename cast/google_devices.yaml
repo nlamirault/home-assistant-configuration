@@ -1,0 +1,7 @@
+- platform: cast
+  media_player:
+    host: !secret home_mini_ip
+
+- platform: cast
+  media_player:
+    host: !secret chromecast_parents_ip
