@@ -56,6 +56,9 @@ logbook:
 # Text to speech
 tts:
   platform: google
+  cache: true
+  time_memory: 300
+  language: 'fr'
 
 # Log
 logger: !include logger.yaml
