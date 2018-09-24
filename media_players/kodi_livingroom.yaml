@@ -1,5 +1,5 @@
-platform: kodi
-name: kodi salon
-host: !secret kodi_livingroom_ip
-port: 8080
-enable_websocket: false
+- platform: kodi
+  name: kodi salon
+  host: !secret kodi_livingroom_ip
+  port: 8080
+  enable_websocket: false

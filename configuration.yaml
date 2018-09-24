@@ -56,6 +56,9 @@ logbook:
 # Text to speech
 tts:
   platform: google
+  cache: true
+  time_memory: 300
+  language: 'fr'
 
 # Log
 logger: !include logger.yaml
@@ -107,7 +110,8 @@ script: !include_dir_named scripts
 
 # google: !include google_oauth.yaml
 
-media_player: !include_dir_list media_players
+# media_player: !include_dir_list media_players
+media_player: !include_dir_merge_list media_players
 
 notify: !include_dir_list notify
 
