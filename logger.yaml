@@ -1,7 +1,14 @@
-default: info
-# logs:
+# default: info
+default: error
+logs:
+  # Home Assistant dependencies
+  # ---------------------------------
   # libopenzwave: info
   # openzwave: info
+  pychromecast.socket_client: debug
+  pychromecast: debug
+  # Home Assistant internal
+  # --------------------------------
   # homeassistant.core: warn
   # homeassistant.setup: warn
   # homeassistant.loader: warn
@@ -10,6 +17,7 @@ default: info
   # homeassistant.components.discovery: warn
   # homeassistant.components.http: warn
   # homeassistant.components.media_player: warn
+  homeassistant.components.media_player.cast: debug
   # homeassistant.components.notify: debug
   # homeassistant.components.recorder: warn
   # homeassistant.components.sensor: info
