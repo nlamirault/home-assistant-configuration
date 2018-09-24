@@ -10,3 +10,4 @@ entities:
   - !secret device_tracker_laptop_work
   - !secret device_tracker_tablet_danew
   - !secret device_tracker_tablet_nexus
+  - !secret device_tracker_tablet_fire_jcl

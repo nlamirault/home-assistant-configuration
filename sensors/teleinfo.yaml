@@ -2,6 +2,11 @@
   name: "edf"
   device: "/dev/ttyUSB0"
 
+- platform: statistics
+  entity_id: sensor.edf
+  max_age:
+    hours: 24
+
 - platform: template
   sensors:
     teleinfo_hchc:

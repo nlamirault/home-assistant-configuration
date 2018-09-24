@@ -8,8 +8,13 @@
     - service: notify.telegram
       data:
         message: "Home Assistant started"
-    # - service: tts.google_say
-    #   data:
-    #     language: fr
-    #     entity_id: media_player.google_home__salon
-    #     message: Home Assistant démarré
+
+- alias: Guest mode on start
+  trigger:
+    platform: homeassistant
+    event: start
+  action:
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.away_mode
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.guest_mode

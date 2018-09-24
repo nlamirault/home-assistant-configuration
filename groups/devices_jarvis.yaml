@@ -4,5 +4,6 @@ entities:
   - !secret device_tracker_jarvis_master
   - !secret device_tracker_jarvis_node1
   - !secret device_tracker_jarvis_node2
+  - !secret device_tracker_jarvis_node3
   - !secret ping_jarvis_zero1
 

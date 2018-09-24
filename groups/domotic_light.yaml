@@ -1,4 +1,0 @@
-name: Lumières
-view: no
-entities:
-  - !secret light_xiaomi_gateway

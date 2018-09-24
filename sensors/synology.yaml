@@ -7,6 +7,9 @@
     - cpu_total_load
     - cpu_other_load
     - cpu_user_load
+    - cpu_system_load
+    - cpu_1min_load
+    - cpu_5min_load
     - cpu_15min_load
     - memory_real_usage
     - memory_available_real

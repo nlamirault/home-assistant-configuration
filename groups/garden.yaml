@@ -1,0 +1,4 @@
+name: Jardin
+view: yes
+entities:
+  - group.garden_domotic

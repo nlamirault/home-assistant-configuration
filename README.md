@@ -3,23 +3,28 @@
 [![Circle CI](https://circleci.com/gh/nlamirault/home-assistant-configuration/tree/master.svg?style=svg)](https://circleci.com/gh/nlamirault/home-assistant-configuration/tree/master)
 
 This is my Home Assistant configuration.
-I'm currently running Home Assistant version __0.51.2__. Installation used is [docker-compose](https://docs.docker.com/compose/), running on a Raspberry Pi 3, with [HypriotOS](https://blog.hypriot.com/downloads/)
+Running on a Raspberry Pi Zero W, using [HypriotOS](https://blog.hypriot.com/downloads/)
 
-When the HA configuration is ready, Kubernetes will be the deployment platform (See [Jarvis](https://github.com/zeiot/jarvis))
+## Installation
 
-| Use                    | Device                         |
-|------------------------|--------------------------------|
-| Box TV                 | LiveboxTV by Orange            |
-| Home Assistant         | Raspberry PI 3 (Docker image)  |
-| NAS                    | Synology DS212j                |
-| Media Players          | Kodi (OSMC) x2                 |
-| Phones and tablets     | Android, iOS                   |
-| Computers              | iMAC, Linux, ...               |
-| Domotic                | Xiaomi gateway                 |
-| Door sensors           | Xiaomi door sensors x3         |
-| Motion sensors         | Xiaomi motion sensors x1       |
-| Temperature sensors    | Xiaomi Temperature sensors x4  |
+### Packages
 
+Install some packages:
+
+    $ sudo apt-get update
+    $ sudo apt-get install tmux nmap python3-venv picocom build-essential libmysqlclient-dev
+
+### Home Assistant
+
+Clone this repository and install Home Assistant :
+
+    $ mkdir $HOME/Projects
+    $ git clone https://github.com/nlamirault/home-assistant-configuration
+    $ cd home-assistant-configuration
+    $ python3.5 -m venv venv
+    $ source ./venv/bin/activate
+    $ pip3 install wheel mysqlclient
+    $ pip3 install homeassistant
 
 ## Automations
 

@@ -1,0 +1,7 @@
+name: Domotique
+view: no
+entities:
+  - !secret sensor_xiaomi_gateway_illumination
+  - !secret binary_sensor_xiaomi_switch
+  - !secret sensor_xiaomi_water_leak
+  - !secret light_xiaomi_gateway

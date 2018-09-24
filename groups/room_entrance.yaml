@@ -1,0 +1,4 @@
+name: Entrée
+view: yes
+entities:
+  - group.room_entrance_domotic
